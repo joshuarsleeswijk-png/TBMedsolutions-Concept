@@ -1,0 +1,5 @@
+# Netlify publiceert de voorgerenderde map dist/ (geen buildstap nodig).
+# Bron staat in site/. Herbouwen: zie site/README.md, daarna dist/ opnieuw committen.
+[build]
+  publish = "dist"
+  command = ""

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /bedankt
+Sitemap: https://www.tbmedsolutions.nl/sitemap.xml

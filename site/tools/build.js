@@ -1,6 +1,6 @@
 /* Build: prerendert elke route naar een statisch HTML-bestand in dist/, plus sitemap, robots en _redirects. */
 const { chromium } = require('playwright');const fs=require('fs');const path=require('path');
-const SRC='/home/claude/site', DIST='/home/claude/dist', SITE='https://www.tbmedsolutions.nl';
+const SRC=path.resolve(__dirname,'..'), DIST=path.resolve(__dirname,'../../dist'), SITE='https://www.tbmedsolutions.nl';
 (async()=>{
   fs.rmSync(DIST,{recursive:true,force:true}); fs.mkdirSync(DIST,{recursive:true});
   for(const d of ['assets','brochures']) fs.cpSync(path.join(SRC,d), path.join(DIST,d), {recursive:true});

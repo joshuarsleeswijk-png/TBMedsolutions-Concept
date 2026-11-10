@@ -875,6 +875,12 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
   .google-line .gstars{color:#F4B400;letter-spacing:1px;}
   .testi-src{display:inline-block;margin-left:8px;font-size:.74rem;color:var(--ink-faint);}
   .testi-who .initial{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600;background:var(--surface-2,#eee);color:var(--ink);flex:0 0 44px;}
+  .fact-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .fact-strip>div{background:var(--paper,#faf7f2);border:1px solid var(--line);border-radius:var(--radius-m,14px);padding:18px 20px;display:flex;flex-direction:column;gap:4px;}
+  .fact-strip b{font-family:var(--font-display);font-size:1.25rem;color:var(--ink);}
+  .fact-strip span{font-size:.88rem;color:var(--ink-soft);}
+  @media (max-width:760px){ .fact-strip{grid-template-columns:1fr;} }
+  .media-caption{font-size:.8rem;color:var(--ink-faint);margin-top:8px;text-align:center;}
   .footer-kvk{color:rgba(255,255,255,.5);font-size:.8rem;}
 
   /* scroll-animaties: kort, vroeg, en uit bij prefers-reduced-motion */
@@ -926,7 +932,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
   </div>
   <div class="mobile-nav-body" id="mobileNavBody"><div class="mobile-acc" id="macc0">
       <button class="mobile-acc-trigger" onclick="document.getElementById('macc0').classList.toggle('open')">Producten<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg></button>
-      <div class="mobile-acc-panel"><a href="/bloomea/producten/la-fontaine" onclick="toggleMobileNav()">La Fontaine</a><a href="/bloomea/producten/neolift" onclick="toggleMobileNav()">Neolift</a><a href="/bloomea/producten/neocare-origin" onclick="toggleMobileNav()">Neocare Origin</a><a href="/bloomea/producten/neocare-advanced" onclick="toggleMobileNav()">Neocare Advanced</a><a href="/bloomea/producten/neocare-elite" onclick="toggleMobileNav()">Neocare Elite</a><a href="/bloomea/producten/dr-platon" onclick="toggleMobileNav()">Dr. Platon</a><a href="/bloomea/producten/no-needle-meso" onclick="toggleMobileNav()">No Needle Meso</a></div>
+      <div class="mobile-acc-panel"><a href="/bloomea/producten/la-fontaine" onclick="toggleMobileNav()">La Fontaine</a><a href="/bloomea/producten/neolift" onclick="toggleMobileNav()">Neolift</a><a href="/bloomea/producten/neocare-origin" onclick="toggleMobileNav()">Neocare Origin</a><a href="/bloomea/producten/neocare-advanced" onclick="toggleMobileNav()">Neocare Advanced</a><a href="/bloomea/producten/neocare-elite" onclick="toggleMobileNav()">Neocare Elite</a><a href="/bloomea/producten/dr-platon" onclick="toggleMobileNav()">Dr. Platon</a><a href="/bloomea/producten/no-needle-meso" onclick="toggleMobileNav()">No Needle Meso</a><a href="/bloomea/producten/skin-plus" onclick="toggleMobileNav()">Skin+ by Bloomea</a></div>
     </div><div class="mobile-acc" id="macc1">
       <button class="mobile-acc-trigger" onclick="document.getElementById('macc1').classList.toggle('open')">Indicaties<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg></button>
       <div class="mobile-acc-panel"><a href="/bloomea/indicaties/acne-littekens" onclick="toggleMobileNav()">(Acné)littekens</a><a href="/bloomea/indicaties/cellulite" onclick="toggleMobileNav()">Cellulite</a><a href="/bloomea/indicaties/pigmentatie" onclick="toggleMobileNav()">Pigmentatie</a><a href="/bloomea/indicaties/rimpels-fijne-lijntjes" onclick="toggleMobileNav()">Rimpels en fijne lijntjes</a><a href="/bloomea/indicaties/spieren" onclick="toggleMobileNav()">Spieren (tonus &amp; opbouw)</a><a href="/bloomea/indicaties/vale-huid-porien" onclick="toggleMobileNav()">Vale huid en open poriën</a><a href="/bloomea/indicaties/vetreductie" onclick="toggleMobileNav()">Vetreductie</a><a href="/bloomea/indicaties/volumeverlies" onclick="toggleMobileNav()">Volumeverlies</a></div>
@@ -955,7 +961,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
       </a>
       <a href="/" class="by-tb" id="byTb">by TB Medsolutions</a>
     </div>
-    <nav class="brand-nav" id="brandNav"><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Producten<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega"><div style="display:flex;flex-direction:column;gap:2px;"><a class="bmega-link" href="/bloomea/producten/la-fontaine">La Fontaine<small>De innovatieve oplossing voor alle huidimperfecties.</small></a><a class="bmega-link" href="/bloomea/producten/neolift">Neolift<small>De gamechanger voor anti-aging in het gelaat.</small></a><a class="bmega-link" href="/bloomea/producten/neocare-origin">Neocare Origin<small>De toegankelijke TECAR-instap voor gelaat én lichaam.</small></a><a class="bmega-link" href="/bloomea/producten/neocare-advanced">Neocare Advanced<small>De geavanceerde oplossing voor gelaat- en lichaamsverbetering.</small></a><a class="bmega-link" href="/bloomea/producten/neocare-elite">Neocare Elite<small>De gamechanger in gelaat- en lichaamsverbetering.</small></a><a class="bmega-link" href="/bloomea/producten/dr-platon">Dr. Platon<small>Cold plasma huidverbetering, zonder pijn of hersteltijd.</small></a><a class="bmega-link" href="/bloomea/producten/no-needle-meso">No Needle Meso<small>Naaldloze mesotherapie met ETM-technologie.</small></a></div></div></div><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Indicaties<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega bmega-wide"><div class="bmega-grid"><a class="bmega-link" href="/bloomea/indicaties/acne-littekens">(Acné)littekens</a><a class="bmega-link" href="/bloomea/indicaties/cellulite">Cellulite</a><a class="bmega-link" href="/bloomea/indicaties/pigmentatie">Pigmentatie</a><a class="bmega-link" href="/bloomea/indicaties/rimpels-fijne-lijntjes">Rimpels en fijne lijntjes</a><a class="bmega-link" href="/bloomea/indicaties/spieren">Spieren (tonus &amp; opbouw)</a><a class="bmega-link" href="/bloomea/indicaties/vale-huid-porien">Vale huid en open poriën</a><a class="bmega-link" href="/bloomea/indicaties/vetreductie">Vetreductie</a><a class="bmega-link" href="/bloomea/indicaties/volumeverlies">Volumeverlies</a></div></div></div><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Service en ondersteuning<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega"><a class="bmega-link" href="/bloomea/totaaloplossingen/financiering">Financiering<small>Lease &amp; gespreid betalen</small></a><a class="bmega-link" href="/bloomea/totaaloplossingen/marketing">Marketing<small>Campagnes &amp; Open Deur Dag</small></a><a class="bmega-link" href="/bloomea/totaaloplossingen/training">Training en ondersteuning<small>Praktijktraining bij levering</small></a></div></div><div class="bnav-item"><a class="bnav-link" href="/bloomea/evenementen">Demodagen</a></div><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Kennisbank<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega"><a class="bmega-link" href="/bloomea/kennisbank/blog">Blog<small>Artikelen uit de praktijk</small></a><a class="bmega-link" href="/bloomea/kennisbank/studies">Studies<small>Klinische onderbouwing</small></a><a class="bmega-link" href="/bloomea/kennisbank/faq">Veelgestelde vragen<small>Financiering en training</small></a></div></div><div class="bnav-item"><a class="bnav-link" href="/bloomea/contact">Contact</a></div></nav>
+    <nav class="brand-nav" id="brandNav"><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Producten<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega"><div style="display:flex;flex-direction:column;gap:2px;"><a class="bmega-link" href="/bloomea/producten/la-fontaine">La Fontaine<small>De innovatieve oplossing voor alle huidimperfecties.</small></a><a class="bmega-link" href="/bloomea/producten/neolift">Neolift<small>De gamechanger voor anti-aging in het gelaat.</small></a><a class="bmega-link" href="/bloomea/producten/neocare-origin">Neocare Origin<small>De toegankelijke TECAR-instap voor gelaat én lichaam.</small></a><a class="bmega-link" href="/bloomea/producten/neocare-advanced">Neocare Advanced<small>De geavanceerde oplossing voor gelaat- en lichaamsverbetering.</small></a><a class="bmega-link" href="/bloomea/producten/neocare-elite">Neocare Elite<small>De gamechanger in gelaat- en lichaamsverbetering.</small></a><a class="bmega-link" href="/bloomea/producten/dr-platon">Dr. Platon<small>Cold plasma huidverbetering, zonder pijn of hersteltijd.</small></a><a class="bmega-link" href="/bloomea/producten/no-needle-meso">No Needle Meso<small>Naaldloze mesotherapie met ETM-technologie.</small></a><a class="bmega-link" href="/bloomea/producten/skin-plus">Skin+ by Bloomea<small>Lift je huid. Train je gezicht.</small></a></div></div></div><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Indicaties<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega bmega-wide"><div class="bmega-grid"><a class="bmega-link" href="/bloomea/indicaties/acne-littekens">(Acné)littekens</a><a class="bmega-link" href="/bloomea/indicaties/cellulite">Cellulite</a><a class="bmega-link" href="/bloomea/indicaties/pigmentatie">Pigmentatie</a><a class="bmega-link" href="/bloomea/indicaties/rimpels-fijne-lijntjes">Rimpels en fijne lijntjes</a><a class="bmega-link" href="/bloomea/indicaties/spieren">Spieren (tonus &amp; opbouw)</a><a class="bmega-link" href="/bloomea/indicaties/vale-huid-porien">Vale huid en open poriën</a><a class="bmega-link" href="/bloomea/indicaties/vetreductie">Vetreductie</a><a class="bmega-link" href="/bloomea/indicaties/volumeverlies">Volumeverlies</a></div></div></div><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Service en ondersteuning<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega"><a class="bmega-link" href="/bloomea/totaaloplossingen/financiering">Financiering<small>Lease &amp; gespreid betalen</small></a><a class="bmega-link" href="/bloomea/totaaloplossingen/marketing">Marketing<small>Campagnes &amp; Open Deur Dag</small></a><a class="bmega-link" href="/bloomea/totaaloplossingen/training">Training en ondersteuning<small>Praktijktraining bij levering</small></a></div></div><div class="bnav-item"><a class="bnav-link" href="/bloomea/evenementen">Demodagen</a></div><div class="bnav-item"><button type="button" class="bnav-link" aria-haspopup="true">Kennisbank<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"></path></svg></button><div class="bmega"><a class="bmega-link" href="/bloomea/kennisbank/blog">Blog<small>Artikelen uit de praktijk</small></a><a class="bmega-link" href="/bloomea/kennisbank/studies">Studies<small>Klinische onderbouwing</small></a><a class="bmega-link" href="/bloomea/kennisbank/faq">Veelgestelde vragen<small>Financiering en training</small></a></div></div><div class="bnav-item"><a class="bnav-link" href="/bloomea/contact">Contact</a></div></nav>
     <div class="brand-actions">
       <a href="/winback" class="switch-link" id="switchBtn">Fysiotherapeut? Naar Winback</a>
       <button class="btn btn-brand btn-sm" onclick="openLead('kennismaking')" id="brandCtaBtn">Plan een kennismaking</button>
@@ -975,7 +981,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
           <p class="lede" style="margin-top:14px;">Hardnekkige vetophopingen aanpakken, ook bij een gezonde leefstijl.</p>
           <p class="body-text" style="margin-top:20px;">Vetcellen die niet reageren op dieet of beweging kunnen via TECAR-radiofrequentie en EMS gericht worden aangepakt voor een merkbaar slankere lichaamslijn.</p>
           <div class="hero-cta-row"><button class="btn btn-primary" onclick="openLead('kennismaking','Vetreductie')">Plan een kennismaking</button></div>
-          <p class="cta-sub">We bellen je snel terug. 30 minuten, vrijblijvend.</p>
+          <p class="cta-sub">We bellen je binnen 48 uur tijdens kantooruren terug. 30 minuten, vrijblijvend.</p>
           <p class="bel-regel ">Of bel direct: <a href="tel:+31611740405">06 11 74 04 05</a></p>
         </div>
         <div class="detail-media"><img src="https://cms.tbmedsolutions.nl/assets/indicaties/vet.jpg" alt="Vetreductie"></div>
@@ -1024,7 +1030,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
           <h2 class="h2">Zo begint het: drie stappen, geen verplichtingen.</h2>
           <ol class="start-steps ">
     <li><span class="step-n">1</span><div><b>Laat je gegevens achter</b><span>Twee minuten werk, geen verplichtingen.</span></div></li>
-    <li><span class="step-n">2</span><div><b>We bellen je terug</b><span>We bellen je snel terug. 30 minuten, vrijblijvend.</span></div></li>
+    <li><span class="step-n">2</span><div><b>We bellen je terug</b><span>We bellen je binnen 48 uur tijdens kantooruren terug. 30 minuten, vrijblijvend.</span></div></li>
     <li><span class="step-n">3</span><div><b>Demo in je eigen praktijk</b><span>Of op een van onze locaties in Heesch, Renswoude of Lemmer.</span></div></li>
   </ol>
         </div>
@@ -1032,30 +1038,13 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
           <p class="label">Waarom nu</p>
           <p class="body-text">De eerstvolgende demodag is op 22 november in Renswoude, Barneveldsestraat 21. Wie nu kennismaakt, kan daar nog bij zijn.</p>
           <button class="btn btn-brand" onclick="openLead('kennismaking')">Plan een kennismaking</button>
-          <p class="cta-sub">We bellen je snel terug. 30 minuten, vrijblijvend.</p>
+          <p class="cta-sub">We bellen je binnen 48 uur tijdens kantooruren terug. 30 minuten, vrijblijvend.</p>
           <p class="bel-regel ">Of bel direct: <a href="tel:+31611740405">06 11 74 04 05</a></p>
         </div>
       </div>
     </div>
   </section>
   
-  <section id="downloads" class="">
-    <div class="wrap">
-      <div class="lead-box">
-        <div>
-          <p class="label light">Download het resultatenboek en de brochure</p>
-          <h3 class="h2" style="color:#fff;">Voor/na-resultaten uit Nederlandse salons en praktijken, met het aantal sessies erbij.</h3>
-          <p class="lede" style="color:rgba(255,255,255,.8);margin-top:12px;">Het resultatenboek en de brochure, direct in je inbox. Geen telefoontje, tenzij je daar zelf om vraagt.</p>
-        </div>
-        <form class="lead-form" onsubmit="submitLead(event)" data-type="download" data-onderwerp="Resultatenboek en brochure">
-          <div class="field"><label>Naam *</label><input type="text" name="naam" required="" autocomplete="name" placeholder="Voor- en achternaam"></div><div class="field"><label>E-mailadres *</label><input type="email" name="email" required="" autocomplete="email" placeholder="naam@praktijk.nl"></div>
-          
-          <button class="btn btn-brand" style="justify-content:center;" type="submit">Download het resultatenboek en de brochure</button>
-          <p class="form-privacy">Je gegevens gebruiken we alleen om je de download te sturen. <a href="/privacy">Privacy</a></p>
-        </form>
-      </div>
-    </div>
-  </section>
   
   <section class="bg-tint tight">
     <div class="wrap" style="max-width:760px;">
@@ -1072,7 +1061,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <button class="faq-q">Hoeveel training krijg ik bij aanschaf?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg></button>
-        <div class="faq-a"><p class="body-text">Een dag praktijktraining in jouw salon bij levering, daarna 12 maanden bijscholing op maat van jouw niveau, op locatie of online, inclusief certificaat.</p></div>
+        <div class="faq-a"><p class="body-text">Een dag praktijktraining bij levering, daarna onbeperkt bijscholing: trainingsmomenten per apparaat bij partners op locatie (we streven naar elk kwartaal, afhankelijk van aanmeldingen), de Bloomea Academy met trainingsvideo's en doorlopende updates via de groepsapp. Bij nieuwe toepassingen, zoals Skin+, ben je als eerste uitgenodigd.</p></div>
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <button class="faq-q">Wat als mijn klanten de behandeling niet kopen?<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"></path></svg></button>
@@ -1113,7 +1102,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
       <a href="/" style="display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-size:.84rem;font-weight:600;color:rgba(255,255,255,.85);"><span class="tb-logo light"><svg viewBox="108 0 193 161" aria-hidden="true"><defs><linearGradient id="tbg" gradientUnits="userSpaceOnUse" x1="93.05" y1="154.981" x2="312.162" y2="28.338"><stop offset="0" stop-color="#701515"></stop><stop offset=".249" stop-color="#ba441b"></stop><stop offset=".453" stop-color="#e29566"></stop><stop offset=".733" stop-color="#ba441b"></stop><stop offset=".954" stop-color="#701515"></stop></linearGradient></defs><path fill="#701515" d="M204.383,130.859c.008-.017.014-.032.022-.048-.011.019-.019.04-.03.059.002-.004.005-.006.008-.011Z"></path><path fill="url(#tbg)" d="M239.774,94.474v-.41c11.34-2.46,20.767-10.247,20.767-22.407,0-14.482-9.154-19.947-32.653-19.81h-7.259c.206,1.764.368,3.807.495,6.012h4.851c12.433,0,19.128,5.465,19.128,15.848,0,11.613-6.012,18.034-18.308,18.034h-10.246v-10.347h-5.142c-2.406,0-4.464-1.729-4.88-4.098-1.216-6.929-2.536-10.807-4.281-12.574-.104-.106-.217-.207-.335-.306.018.841.019,1.787.019,2.871v57.655c0,2.061.022,3.231-.08,4.115-.039.618-.216,1.208-.517,1.755-.008.016-.014.032-.022.048-.002.005-.005.006-.008.011-1.122,1.974-3.801,3.366-6.931,3.366-4.14,0-7.495-2.431-7.495-5.429,0-.093.013-.183.019-.275-.07-.921-.082-2.09-.082-3.59h0V57.722h6.558c1.522,0,2.904.054,4.167.18,8.487.844,11.49,4.98,13.868,18.537h5.142v-7.025c-.09-6.149-.327-13.021-.907-17.567h-71.864c-.957,6.421-1.093,17.488-.957,24.592h4.919c2.459-15.575,6.012-18.717,18.033-18.717h6.422v67.219h0q0,9.017-10.383,10.248v5.191h70.038c22.134,0,34.157-9.154,34.157-26.232,0-14.345-10.521-18.991-26.232-19.674ZM231.166,134.368h-3.963c-9.564,0-10.656-.957-10.656-9.974v-26.641h10.93c14.892,0,22.406,5.465,22.406,17.625,0,12.705-6.695,18.99-18.717,18.99Z"></path><path fill="#701515" d="M204.648,129.055c-.077.667-.226,1.177-.517,1.755.301-.547.478-1.138.517-1.755Z"></path><path fill="url(#tbg)" d="M127.336,140.379c-7.525-13.046-11.854-28.156-11.854-44.268,0-49.024,39.885-88.909,88.909-88.909s88.909,39.885,88.909,88.909c0,16.111-4.33,31.222-11.854,44.268h8.213c6.912-13.259,10.844-28.309,10.844-44.268C300.501,43.115,257.386,0,204.39,0s-96.111,43.115-96.111,96.111c0,15.959,3.932,31.009,10.844,44.268h8.213Z"></path></svg><span class="tb-logo-txt">TB <b>Medsolutions</b></span></span></a>
       <a href="/winback" style="display:inline-flex;align-items:center;gap:7px;margin-top:12px;font-size:.84rem;font-weight:600;color:rgba(255,255,255,.75);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"></path></svg> Fysiotherapeut? Naar Winback</a>
     </div>
-    <div><h5>Producten</h5><ul><li><a href="/bloomea/producten/la-fontaine">La Fontaine</a></li><li><a href="/bloomea/producten/neolift">Neolift</a></li><li><a href="/bloomea/producten/neocare-origin">Neocare Origin</a></li><li><a href="/bloomea/producten/neocare-advanced">Neocare Advanced</a></li><li><a href="/bloomea/producten/neocare-elite">Neocare Elite</a></li><li><a href="/bloomea/producten/dr-platon">Dr. Platon</a></li><li><a href="/bloomea/producten/no-needle-meso">No Needle Meso</a></li></ul></div>
+    <div><h5>Producten</h5><ul><li><a href="/bloomea/producten/la-fontaine">La Fontaine</a></li><li><a href="/bloomea/producten/neolift">Neolift</a></li><li><a href="/bloomea/producten/neocare-origin">Neocare Origin</a></li><li><a href="/bloomea/producten/neocare-advanced">Neocare Advanced</a></li><li><a href="/bloomea/producten/neocare-elite">Neocare Elite</a></li><li><a href="/bloomea/producten/dr-platon">Dr. Platon</a></li><li><a href="/bloomea/producten/no-needle-meso">No Needle Meso</a></li><li><a href="/bloomea/producten/skin-plus">Skin+ by Bloomea</a></li></ul></div>
     <div><h5>Service en ondersteuning</h5><ul>
       <li><a href="/bloomea/totaaloplossingen/financiering">Financiering</a></li>
       <li><a href="/bloomea/totaaloplossingen/marketing">Marketing</a></li>
@@ -1127,7 +1116,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
       <li><a href="https://wa.me/31611740405" target="_blank" rel="noopener">WhatsApp</a></li>
       <li><a href="mailto:info@tbmedsolutions.nl">info@tbmedsolutions.nl</a></li>
       <li><a href="/bloomea/contact">Vestigingen en route</a></li>
-      <li class="footer-kvk">KvK 97366676</li></ul></div></div>
+      <li class="footer-kvk">KvK 97366676 · btw NL868021222B01</li></ul></div></div>
     <div class="footer-bottom">
       <div id="footerLegalLine">© 2026 TB Medsolutions · Bloomea Nederland &amp; Winback Nederland</div>
       <div class="footer-legal"><a href="/algemene-voorwaarden">Algemene voorwaarden</a><a href="/privacy">Privacy</a><a href="/disclaimer">Disclaimer</a></div>
@@ -1143,15 +1132,15 @@ const SITE_CONFIG = {
   gtmId:"GTM-P9S8PF4Z", /* GTM-container "tbmedsolutions.nl" (account TB Medsolutions); GA4 G-PEJCM5MKPK zit in GTM */
   ghlFormUrl:"",       /* GoHighLevel Survey/Form embed-URL; leeg = eigen formulier (Netlify Forms) */
   ghlCalendarUrl:"",   /* GoHighLevel agenda embed-URL voor /kennismaking/agenda */
-  kvk:"97366676", btw:"", /* KvK (kvk.nl, TB Medsolutions B.V.); btw-nummer is niet openbaar, volgt van Tamara */
+  kvk:"97366676", btw:"NL868021222B01", /* KvK (kvk.nl) en btw-nummer (aangeleverd door TB Medsolutions, 10 nov 2026) */
   calendlyBase:"https://calendly.com/bloomeanederland", /* Tamara's Calendly; per merk een eigen eventtype */
   calendlyEvent:{bloomea:"call", winback:"kennismaking_winback", default:"30min"},
-  callbackTerm:"",     /* bijv. "1 werkdag": "We bellen je binnen 1 werkdag." Leeg = "We bellen je snel terug." */
+  callbackTerm:"48 uur tijdens kantooruren", /* aangeleverd door TB Medsolutions */
   googleReviewScore:"4,9", googleReviewCount:"33", /* Google-bedrijfsprofiel "Bloomea Nederland", Heesch (8 nov 2026) */
   googleMapsUrl:"https://www.google.com/maps/search/Bloomea+Nederland+Heesch"
 };
 function calendlyUrl(brand){ const ev=SITE_CONFIG.calendlyEvent[brand]||SITE_CONFIG.calendlyEvent.default; return `${SITE_CONFIG.calendlyBase}/${ev}`; }
-function callbackLine(){ return SITE_CONFIG.callbackTerm ? `We bellen je binnen ${SITE_CONFIG.callbackTerm}. 30 minuten, vrijblijvend.` : "We bellen je snel terug. 30 minuten, vrijblijvend."; }
+function callbackLine(){ return SITE_CONFIG.callbackTerm ? `We bellen je binnen ${SITE_CONFIG.callbackTerm} terug. 30 minuten, vrijblijvend.` : "We bellen je snel terug. 30 minuten, vrijblijvend."; }
 function belRegel(cls){ return `<p class="bel-regel ${cls||""}">Of bel direct: <a href="tel:${SITE_CONFIG.phone}">${SITE_CONFIG.phoneDisplay}</a></p>`; }
 function track(event, data){ try{ window.dataLayer.push(Object.assign({event:event, page_path:location.pathname, brand:document.body.getAttribute("data-brand")||"tb"}, data||{})); }catch(e){} }
 function loadGtm(){
@@ -1223,6 +1212,7 @@ const BRANDS = {
   }
 };
 
+const BF2 = "https://www.bloomea.fr/wp-content/uploads/";
 const PRODUCTS = [
   {id:"la-fontaine", brand:"bloomea", zone:["Gelaat"], name:"La Fontaine",
    tagline:"De innovatieve oplossing voor alle huidimperfecties.",
@@ -1238,7 +1228,7 @@ const PRODUCTS = [
    indications:["rimpels-fijne-lijntjes","volumeverlies","spieren"],
    price:215, img:"https://cms.tbmedsolutions.nl/assets/producten/schermafbeelding-2025-04-15-om-10.39.01.png", depth:2,
    usps:["Gepatenteerde technologie", "Niet-invasief alternatief voor naaldbehandelingen", "Zichtbaar resultaat vanaf sessie 1"],
-   results:[{img:IMG.resultAntiage,label:"Anti-aging gelaat (bron: Bloomea)"}]},
+   results:[{img:IMG.resultAntiage,label:"Anti-aging gelaat (Bloomea Frankrijk)"}]},
 
   {id:"neocare-origin", brand:"bloomea", zone:["Gelaat","Lichaam"], name:"Neocare Origin",
    tagline:"De toegankelijke TECAR-instap voor gelaat én lichaam.",
@@ -1246,7 +1236,7 @@ const PRODUCTS = [
    indications:["cellulite","vetreductie","vale-huid-porien"],
    price:380, img:"https://cms.tbmedsolutions.nl/assets/hero/header-neocare-origin.jpg", depth:2.5,
    usps:["TECAR-technologie voor gelaat én lichaam", "Instapprijs binnen de Neocare-lijn", "Combineerbaar met opschaling naar Advanced/Elite"],
-   results:[{img:IMG.resultCellulite,label:"Cellulite (bron: Bloomea)"},{img:IMG.resultVentre,label:"Bodycontouring buik (bron: Bloomea)"}]},
+   results:[{img:IMG.resultCellulite,label:"Cellulite (Bloomea Frankrijk)"},{img:IMG.resultVentre,label:"Bodycontouring buik (Bloomea Frankrijk)"}]},
 
   {id:"neocare-advanced", brand:"bloomea", zone:["Gelaat","Lichaam"], name:"Neocare Advanced",
    tagline:"De geavanceerde oplossing voor gelaat- en lichaamsverbetering.",
@@ -1254,7 +1244,7 @@ const PRODUCTS = [
    indications:["cellulite","vetreductie","spieren","volumeverlies"],
    price:511, img:"https://cms.tbmedsolutions.nl/assets/hero/header-neocare-advanced-.jpg", depth:3,
    usps:["3 technologieën gecombineerd met TECAR", "Geschikt voor gelaat én lichaam", "Volgende stap na Neocare Origin"],
-   results:[{img:IMG.resultCellulite,label:"Cellulite (bron: Bloomea)"},{img:IMG.resultVentre,label:"Bodycontouring buik (bron: Bloomea)"}]},
+   results:[{img:IMG.resultCellulite,label:"Cellulite (Bloomea Frankrijk)"},{img:IMG.resultVentre,label:"Bodycontouring buik (Bloomea Frankrijk)"}]},
 
   {id:"neocare-elite", brand:"bloomea", zone:["Gelaat","Lichaam"], name:"Neocare Elite",
    tagline:"De gamechanger in gelaat- en lichaamsverbetering.",
@@ -1262,7 +1252,7 @@ const PRODUCTS = [
    indications:["cellulite","vetreductie","spieren","volumeverlies","rimpels-fijne-lijntjes"],
    price:630, img:"https://cms.tbmedsolutions.nl/assets/indicaties/huidverslapping-2.jpg", depth:6,
    usps:["Quadricore-motor, 2× power", "Tot 3 zones gelijktijdig behandelen", "TECAR + HiEMS + HiTENS in één systeem"],
-   results:[{img:IMG.resultCellulite,label:"Cellulite (bron: Bloomea)"},{img:IMG.resultAntiage,label:"Anti-aging gelaat (bron: Bloomea)"},{img:IMG.resultVentre,label:"Bodycontouring buik (bron: Bloomea)"}]},
+   results:[{img:IMG.resultCellulite,label:"Cellulite (Bloomea Frankrijk)"},{img:IMG.resultAntiage,label:"Anti-aging gelaat (Bloomea Frankrijk)"},{img:IMG.resultVentre,label:"Bodycontouring buik (Bloomea Frankrijk)"}]},
 
   {id:"dr-platon", brand:"bloomea", zone:["Gelaat","Lichaam"], name:"Dr. Platon",
    tagline:"Cold plasma huidverbetering, zonder pijn of hersteltijd.",
@@ -1280,30 +1270,61 @@ const PRODUCTS = [
    usps:["Naaldloze ETM-technologie", "Pijnloos, geen hersteltijd", "Laagdrempelig instapproduct voor klanten"],
    results:[]},
 
+  {id:"skin-plus", brand:"bloomea", zone:["Gelaat"], name:"Skin+ by Bloomea", addon:"neocare-elite",
+   tagline:"Lift je huid. Train je gezicht.",
+   desc:"Skin+ is een behandelprotocol voor de Neocare Elite, gericht op huidverjonging en gezichtscontouren. Met TECAR-radiofrequentie, Hi-TENS en Hi-EMS behandel je niet alleen de huid, maar ook de onderliggende gezichtsspieren en weefsels: overactieve spieren ontspannen, spieren met verminderde tonus stimuleren. Zo werk je aan een betere spierbalans, huidkwaliteit en een natuurlijke, stevigere uitstraling.",
+   indications:["rimpels-fijne-lijntjes","volumeverlies","spieren"],
+   price:null, img:BF2+"2025/03/marilyn-avec-elite-copie-aspect-ratio-1-1.jpg", depth:6,
+   usps:["Rimpelvermindering via spierspanning", "Stevigere, beter gedefinieerde gezichtscontouren", "Zonder naalden en zonder hersteltijd"],
+   results:[]},
+
   {id:"back4", brand:"winback", zone:["Lichaam"], name:"BACK4",
    tagline:"Het meest ingezette model bij fysiotherapeuten en osteopaten.",
    desc:"BACK4 combineert TECAR, HiEMS en HiTENS via twee onafhankelijke kanalen en behandelt tot drie lichaamszones tegelijk. De behandeltijd is gehalveerd ten opzichte van traditionele TECAR-apparatuur en het is combineerbaar met manuele therapie, dry needling en IASTM. CE-gecertificeerd medisch hulpmiddel (CE 0068), in gebruik bij 300+ ziekenhuizen en klinieken in 55 landen.",
    indications:["sportblessures","chronische-klachten","pijn-en-herstel","postoperatief-herstel"],
    price:null, img:IMG.back4Photo, depth:6,
-   usps:["Twee kanalen, drie zones gelijktijdig", "Behandeltijd gehalveerd t.o.v. traditionele TECAR", "FDA & CE medisch gecertificeerd"],
+   usps:["Twee kanalen, drie zones gelijktijdig", "Behandeltijd gehalveerd t.o.v. traditionele TECAR", "CE-gecertificeerd medisch hulpmiddel (CE 0068)"],
    results:[]},
 
   {id:"back3tx", brand:"winback", zone:["Lichaam"], name:"BACK3TX",
    tagline:"Bewezen TECAR-technologie, de toegankelijke instap in Winback.",
-   desc:"BACK3TX combineert TECAR, HiEMS en HiTENS in één behandelkanaal en levert een effectieve behandeling in 15 minuten. Lichtgewicht (4 kg) en draagbaar, met gepatenteerde Power-In technologie die energie automatisch aanpast aan de weerstand van het weefsel. Inclusief WiFi-connectiviteit voor software-updates en diagnostiek.",
+   desc:"BACK3TX combineert TECAR, HiEMS en HiTENS in één behandelkanaal en levert een effectieve behandeling van circa 30 minuten. Lichtgewicht (4 kg) en draagbaar, met gepatenteerde Power-In technologie die energie automatisch aanpast aan de weerstand van het weefsel. Inclusief WiFi-connectiviteit voor software-updates en diagnostiek.",
    indications:["pijn-en-herstel","chronische-klachten","postoperatief-herstel"],
    price:null, img:IMG.back3txPhoto, depth:4,
-   usps:["Effectieve sessie in 15 minuten", "Draagbaar, 4 kg, overal inzetbaar", "Automatische weefselherkenning (Power-In)"],
+   usps:["Behandeling van circa 30 minuten", "Draagbaar, 4 kg, overal inzetbaar", "Automatische weefselherkenning (Power-In)"],
    results:[]},
 
   {id:"back-white", brand:"winback", zone:["Gelaat","Lichaam"], name:"BACK White",
-   tagline:"Nieuw en uniek in Nederland, speciaal voor vrouwspecifieke zorg.",
-   desc:"BACK White combineert de medische Winback-technologie met toepassingen voor body firming, anti-aging gezichtsbehandelingen, intimate rejuvenation, pelvic pain en postpartum herstel. Ondersteunt pijnmodulatie, circulatie, oedeembehandeling, spieractivatie en weefselherstel, manueel én handsfree.",
+   tagline:"De BACK4 in witte uitvoering, voor de esthetisch-medische praktijk.",
+   desc:"BACK White is technisch hetzelfde apparaat als de BACK4, in een witte behuizing. Het is bedoeld voor de esthetisch-medische praktijk en Winback Women: body firming, anti-aging gezichtsbehandelingen, intimate rejuvenation, pelvic pain en postpartum herstel. Pijnmodulatie, circulatie, oedeembehandeling, spieractivatie en weefselherstel, manueel én handsfree met Care+.",
    indications:["postoperatief-herstel","pijn-en-herstel"],
    price:null, img:"https://cms.tbmedsolutions.nl/assets/indicaties/istock-598218018-massage-visage-myback-scaled.jpg", depth:3,
-   usps:["Medisch-esthetische kruisbestuiving", "Geschikt voor women's health & postpartum", "Manuele én handsfree protocollen"],
+   usps:["Zelfde techniek als BACK4, witte behuizing", "Voor women's health, postpartum en esthetiek", "Handsfree Care+ protocollen SLIM+, MOM+ en EXPERT+"],
    results:[]},
 ];
+
+/* Behandelgegevens per apparaat, aangeleverd door TB Medsolutions (10 nov 2026).
+   Aankoopprijzen staan bewust niet op de site (wens Tamara: geen harde eindprijzen); alleen de bevestigde maandbedragen en 'vanaf'-bedragen. */
+const DEVICE_DATA = {
+  "neocare-elite":   {levertijd:"2 dagen", duur:"15 tot 30 minuten", sessies:"5 tot 10", aLo:130, aHi:160, sLo:5, sHi:10},
+  "neocare-advanced":{levertijd:"7 dagen", duur:"45 tot 60 minuten", sessies:"5 tot 15", aLo:110, aHi:110, sLo:5, sHi:15},
+  "neocare-origin":  {levertijd:"7 dagen", duur:"45 tot 60 minuten", sessies:"5 tot 15", aLo:100, aHi:100, sLo:5, sHi:15},
+  "neolift":         {levertijd:"2 dagen", duur:"45 minuten", sessies:"5 tot 10", aLo:120, aHi:160, sLo:5, sHi:10},
+  "la-fontaine":     {levertijd:"2 dagen", duur:"45 minuten", sessies:"5 tot 10", aLo:100, aHi:120, sLo:5, sHi:10},
+  "dr-platon":       {levertijd:"7 dagen", duur:"20 tot 30 minuten", sessies:"6", aLo:55, aHi:60, sLo:6, sHi:6},
+  "no-needle-meso":  {levertijd:"7 dagen", duur:"45 minuten", sessies:"6", aLo:120, aHi:140, sLo:6, sHi:6},
+  "skin-plus":       {levertijd:"Direct leverbaar", duur:"15 minuten", sessies:"1 tot 6", aLo:50, aHi:60, sLo:1, sHi:6},
+  "back3tx":         {levertijd:"7 dagen", duur:"30 minuten", sessies:"5 tot 15", aLo:110, aHi:110, sLo:5, sHi:15},
+  "back4":           {levertijd:"7 dagen", duur:"15 tot 30 minuten", sessies:"5 tot 10", aLo:130, aHi:130, sLo:5, sHi:10},
+  "back-white":      {levertijd:"7 dagen", duur:"15 tot 30 minuten", sessies:"5 tot 10", aLo:130, aHi:130, sLo:5, sHi:10}
+};
+const eur = n => "€" + n.toLocaleString("nl-NL");
+function adviesTekst(d){ return d.aLo===d.aHi ? eur(d.aLo) : `${eur(d.aLo)} tot ${eur(d.aHi)}`; }
+function kuurTekst(d){ const lo=d.aLo*d.sLo, hi=d.aHi*d.sHi; return lo===hi ? eur(lo) : `${eur(lo)} tot ${eur(hi)}`; }
+function prijsRegel(p){
+  if(p.addon) return `Uitbreiding op ${prod(p.addon).name}`;
+  return p.price!=null ? `Vanaf €${p.price}/mnd · leasen mogelijk` : "Investering op aanvraag";
+}
 
 const INDICATIONS = [
   {id:"acne-littekens", brand:"bloomea", name:"(Acné)littekens", summary:"Stimuleer huidherstel en bereik een egalere, gezondere huid.",
@@ -1347,7 +1368,9 @@ const INDICATIONS = [
 ];
 
 const TESTIMONIALS = [
-  {brand:"bloomea", name:"Romy", role:"Allround schoonheidsspecialiste", img:IMG.team,
+  {brand:"bloomea", name:"Gina", role:"Salonhouder, werkt met meerdere Bloomea-apparaten", img:null,
+   quote:"Dankzij de demodagen had ik het eerste apparaat al binnen één dag terugverdiend. Het tweede binnen drie maanden en het duurste binnen vijf, al hadden we dat in het beste seizoen ingepland. Mijn omzet is verviervoudigd en we hebben een tweede vestiging kunnen openen."},
+  {brand:"bloomea", name:"Romy", role:"Allround schoonheidsspecialiste", img:null,
    quote:"Ik was altijd op zoek naar nieuwe apparatuur om mijn klanten beter resultaat te geven. Met lage maandlasten kon ik snel grote winstmarges behalen."},
   {brand:"bloomea", name:"Gina", role:"Schoonheidsspecialist", img:"https://cms.tbmedsolutions.nl/assets/beoordelingen/foto-gina.jpg",
    quote:"Sinds driekwart jaar werk ik met Bloomea-apparatuur. Na mijn eerste aankoop was ik meteen overtuigd en heb ik snel de andere apparaten aangeschaft."},
@@ -1361,7 +1384,7 @@ const TESTIMONIALS = [
    quote:"Zeer tevreden over Tamara haar begeleiding. En superblij met mijn Bloomea Neolift en Fontaine. Mooie behandelmogelijkheden en resultaten."},
   {brand:"bloomea", name:"Petronella Teijema", role:"Salonhouder", img:null, src:"Google-review",
    quote:"Tamara legt alles goed uit en is snel met leveren en antwoorden op vragen, bijvoorbeeld via WhatsApp. Een aanwinst voor Bloomea NL."},
-  {brand:"winback", name:"Bram", role:"Fysiotherapeut", img:"https://cms.tbmedsolutions.nl/assets/beoordelingen/img-sdwovhqf7tsxoon4ivtmjtto-edited.png",
+  {brand:"bloomea", name:"Bram", role:"Fysiotherapeut, werkt met de Neocare Elite", img:null,
    quote:"De Neocare Elite, ontwikkeld door pionier Winback, is een betrouwbaar apparaat dat dankzij TECAR, EMS en Hi-TENS een waardevolle aanvulling is op mijn praktijk."},
   {brand:"winback", name:"Dr. Donald DeFabio", role:"Chiropractor, Ironman World Championships", img:IMG.defabio,
    quote:"Winback is ons Zwitsers zakmes geworden. Acute patiënten ervaren rust, chronische patiënten krijgen mobiliteit terug, atleten herstellen sneller."},
@@ -1383,11 +1406,11 @@ const TOTAAL = {
     marketing:{ title:"Marketing en positionering", eyebrow:"Bloomea · Totaaloplossing 02", lede:"Zichtbaarheid is essentieel om de juiste klanten te bereiken.", img:IMG.marketing1,
       usps:[{h:"Kuren in plaats van losse sessies",p:"Je verkoopt een traject van meerdere behandelingen. Met een vaste maandprijs per apparaat weet je precies wanneer het zich terugverdient."},{h:"Campagnes die klanten binnenbrengen",p:"Op maat gemaakte social campagnes, met contentmateriaal en voor/na-beelden die je direct kunt gebruiken."},{h:"Open Deur Dag",p:"Wij nemen de consulten uit handen en verkopen de eerste kuren direct aan jouw klanten, op één dag in jouw salon."}],
       body:"We zetten in op directe instroom: social media campagnes, een Onedrive vol contentmateriaal en voor-/na-resultaten, en het Marketing Boost Programma met behandel- en verkoopstrategieën speciaal voor schoonheidsspecialisten.", table:null},
-    training:{ title:"Training en ondersteuning", eyebrow:"Bloomea · Totaaloplossing 03", lede:"Een dag praktijktraining in jouw salon bij levering, daarna 12 maanden bijscholing.", img:IMG.training1,
-      usps:[{h:"Op maat gemaakte trainingen",p:"Afgestemd op jouw niveau en behoefte, op locatie of online, inclusief certificaat."},{h:"Persoonlijke begeleiding",p:"Training door een ervaren collega uit het vak, niet door een anonieme helpdesk."},{h:"Je trainer is direct bereikbaar via WhatsApp",p:"Een vraag tijdens een behandeling? Je appt een collega uit het vak en krijgt antwoord."}],
-      body:"Je krijgt toegang tot praktische, diepgaande trainingen: theorie en werking van de technologie, behandeltechnieken, combinaties met andere methodes en verkooptechnieken, zodat je apparatuur direct winstgevend is.", table:null},
+    training:{ title:"Training en ondersteuning", eyebrow:"Bloomea · Totaaloplossing 03", lede:"Een dag praktijktraining in jouw salon bij levering, daarna onbeperkt bijscholing.", img:IMG.training1,
+      usps:[{h:"Op maat gemaakte trainingen",p:"Afgestemd op jouw niveau en behoefte, op locatie of online, inclusief certificaat."},{h:"Persoonlijke begeleiding",p:"Training door een ervaren collega uit het vak, niet door een anonieme helpdesk."},{h:"Als klant bereik je ons 24/7",p:"Een vraag tijdens een behandeling? Je appt een collega uit het vak, ook buiten kantooruren. Geen anonieme helpdesk."}],
+      body:"Een dag praktijktraining bij levering, daarna onbeperkt bijscholing: trainingsmomenten per apparaat bij partners op locatie (we streven naar elk kwartaal, afhankelijk van aanmeldingen), de Bloomea Academy met trainingsvideo's en doorlopende updates via de groepsapp. Bij nieuwe toepassingen, zoals Skin+, ben je als eerste uitgenodigd. In de trainingen: theorie en werking van de technologie, behandeltechnieken, combinaties met andere methodes en verkooptechnieken, zodat je apparatuur direct winstgevend is.", table:null},
     resultaten:{ title:"Resultaten", eyebrow:"Bloomea · Totaaloplossing 04", lede:"Meetbaar en zichtbaar. Dat is waarom salons bij ons blijven.", img:IMG.resultCellulite,
-      usps:[{h:"Zichtbaar vanaf sessie 1",p:"Huidverstrakking, rimpelreductie en vetreductie al merkbaar direct na de eerste behandeling."},{h:"Klinisch onderbouwd",p:"Onafhankelijke medische rapporten en samenwerking met onder andere CNRS."},{h:"Gemeten bij klanten",p:"Resultaten per salon, met het aantal sessies erbij, vind je in het resultatenboek."}],
+      usps:[{h:"Zichtbaar vanaf sessie 1",p:"Huidverstrakking, rimpelreductie en vetreductie al merkbaar direct na de eerste behandeling."},{h:"Klinisch onderbouwd",p:"Onafhankelijke medische rapporten en samenwerking met onder andere CNRS."},{h:"Eigen resultaten",p:"Voor/na-resultaten uit de Bloomea Huidkliniek en van Bloomea Frankrijk, per apparaat op de productpagina's."}],
       body:"Bekijk de echte voor- en na-resultaten per apparaat op de productpagina's, van cellulitebehandeling tot anti-aging en bodyshaping.", table:null}
   },
   winback:{
@@ -1400,8 +1423,8 @@ const TOTAAL = {
     training:{ title:"Training en ondersteuning", eyebrow:"Winback · Totaaloplossing 03", lede:"Implementatiebegeleiding via de Winback Academy.", img:IMG.training3,
       usps:[{h:"Winback Academy",p:"Toegang tot bewezen protocollen per indicatie, ontwikkeld met internationale medische staf."},{h:"Persoonlijke implementatie",p:"Begeleiding bij het integreren van TECAR in je bestaande behandelplan."},{h:"Doorgroeien tot trainer",p:"Op termijn kun je doorgroeien tot erkend Winback-trainer in Nederland."}],
       body:"Pilotcentra krijgen implementatiebegeleiding op maat en toegang tot de Winback Academy, gebouwd op protocollen die internationaal gebruikt worden binnen revalidatie en sportgeneeskunde.", table:null},
-    resultaten:{ title:"Resultaten", eyebrow:"Winback · Totaaloplossing 04", lede:"Klachten die maanden sleepten, vaak opgelost in 2 tot 3 sessies.", img:"https://winbacknl.nl/wp-content/uploads/2026/06/lucas-bernat-salles-FUDhSDFY.jpg",
-      usps:[{h:"Snel meetbaar",p:"Fysiotherapeuten rapporteren merkbare verbetering al na 2 tot 3 sessies bij hardnekkige klachten."},{h:"Klinisch onderbouwd",p:"Gebaseerd op TECAR-technologie en poly-tissulaire biostimulatie, onderbouwd via o.a. CNRS."},{h:"Bewezen op het hoogste niveau",p:"Ingezet bij Olympische atleten, Johns Hopkins Hospital en 300+ ziekenhuizen en klinieken in 55 landen."}],
+    resultaten:{ title:"Resultaten", eyebrow:"Winback · Totaaloplossing 04", lede:"Gemeten bij 89 patiënten: minder pijn, meer beweging, minder medicatie.", img:"https://winbacknl.nl/wp-content/uploads/2026/06/lucas-bernat-salles-FUDhSDFY.jpg",
+      usps:[{h:"Gemeten in de praktijk",p:"In een retrospectieve studie (89 patiënten, 2022-2025) daalde de pijnscore bij bewegen van 7,0 naar 1,2, na gemiddeld acht sessies van 25 minuten."},{h:"Klinisch onderbouwd",p:"Gebaseerd op TECAR-technologie en poly-tissulaire biostimulatie, onderbouwd via o.a. CNRS."},{h:"Bewezen op het hoogste niveau",p:"15.000 apparaten in 55 landen, bij 300 ziekenhuizen en klinieken en de medische staf van 500 sportclubs en bonden."}],
       body:"Bekijk per apparaat de praktijkresultaten, van topsportherstel tot postoperatieve mobilisatie.", table:null}
   }
 };
@@ -1440,6 +1463,8 @@ const BLOGS = [
 ];
 
 const STUDIES = [
+  {id:"studie-7", brand:"winback", date:"2026-11-10", title:"Retrospectieve studie BACK4 (2022-2025)", ref:"Winback White Paper 2026 · observationeel, 89 patiënten, zonder controlegroep",
+   summary:"89 patiënten (gemiddeld 46,6 jaar) met o.a. lage rugpijn, knieletsel en tendinopathie kregen gemiddeld acht sessies van 25 minuten. De pijnscore bij bewegen daalde van 7,0 naar 1,2 (VAS), de kniebuiging nam toe van 80° naar 115° en het medicatiegebruik daalde van 70,8% naar 5,6% van de patiënten. Er werden geen bijwerkingen gemeld. De auteurs wijzen op de beperking van een studie zonder controlegroep."},
   {id:"studie-1", brand:"bloomea", date:"2026-04-22", title:"Antifibrotische effecten van RF elektrische stromen", ref:"PMCID: PMC10341950 · PMID 37446165 · DOI 10.3390/ijms241310986",
    summary:"Hypertrofische littekens en keloïden zijn manifestaties van overmatige dermale fibrose. Het onderzoek toont de antifibrotische effecten van radiofrequente elektrische stromen op littekenweefsel."},
   {id:"studie-2", brand:"bloomea", date:"2026-04-22", title:"Esthetische effecten van TECAR-technologie", ref:"J Cosmet Dermatol, maart 2024; 23(3):869-875 · DOI 10.1111/jocd.16078",
@@ -1454,45 +1479,32 @@ const STUDIES = [
    summary:"Documentatie van TECAR-toepassing bij olympische medische staf, Red Bull-atleten en het Frans nationaal ski- en snowboardcentrum in Albertville."}
 ];
 
+const SKIN_URL = "https://tbmedsolutions.ac-page.com/skin-live-workshop";
 const EVENTS = [
-  {date:"2026-11-23", title:"Lancering Skin+ by Bloomea | Live workshop", time:"11:00 - 15:00", loc:"Renswoude, Barneveldsestraat 21", brand:"bloomea", desc:"Nieuwe benadering van huidverjonging: hoe TECAR, Hi-TENS en Hi-EMS gezichtsspieren ontspannen of stimuleren, met live demonstratie. Voor huidspecialisten en beautyprofessionals.", trainers:"Tamara, Lizette", url:"https://calendly.com/bloomeanederland/lancering-skin-by-bloomea-live-workshop"},
-  {date:"2026-11-24", title:"Lancering Skin+ by Bloomea | Live workshop", time:"11:00 - 15:00", loc:"Renswoude, Barneveldsestraat 21", brand:"bloomea", desc:"Dezelfde workshop als 23 november, voor wie die dag niet kan. Live demonstratie en de commerciële kansen voor jouw salon.", trainers:"Tamara, Lizette", url:"https://calendly.com/bloomeanederland/lancering-skin-by-bloomea-live-workshop-24nov"},
+  {date:"2026-11-23", title:"Lancering Skin+ by Bloomea | Live workshop", time:"11:00 - 15:00", loc:"Renswoude, Barneveldsestraat 21", brand:"bloomea", desc:"Nieuwe benadering van huidverjonging: hoe TECAR, Hi-TENS en Hi-EMS gezichtsspieren ontspannen of stimuleren, met live demonstratie. Voor huidspecialisten en beautyprofessionals.", trainers:"Tamara, Lizette", url:SKIN_URL},
+  {date:"2026-11-24", title:"Lancering Skin+ by Bloomea | Live workshop", time:"11:00 - 15:00", loc:"Renswoude, Barneveldsestraat 21", brand:"bloomea", desc:"Dezelfde workshop als 23 november, voor wie die dag niet kan. Live demonstratie en de commerciële kansen voor jouw salon.", trainers:"Tamara, Lizette", url:SKIN_URL},
   {tbd:true, title:"Lancering Skin+ by Bloomea | Webinar", time:"19:00 - 20:00, data via de agenda", loc:"Online", brand:"bloomea", desc:"Welke gezichtsspieren wil je ontspannen en welke juist stimuleren? Kennismaking met Skin+ in een uur, vanaf je eigen salon.", trainers:"Tamara", url:"https://calendly.com/bloomeanederland/webinar-bloomea-skin"},
   {tbd:true, title:"Demodag Bloomea", time:"11:00 - 15:00, data via de agenda", loc:"Heesch, Renswoude of Lemmer", brand:"bloomea", desc:"Huidige esthetische technologieën wereldwijd, alle typen cellulite herkennen, hoe het fascia werkt. Je behandelt zelf.", trainers:"Tamara, Lizette, Anne", url:"https://calendly.com/bloomeanederland/bloomea-event-renswoude"},
   {tbd:true, title:"Webinar Winback Women", time:"Data via de agenda (Engelstalig)", loc:"Online", brand:"winback", desc:"Winback Women voor bekkenbodem, pelvic pain en postpartum herstel: protocollen en resultaten.", trainers:"Winback", url:"https://calendly.com/bloomeanederland/webinar-winback-woman"},
   {tbd:true, title:"Update Neocare TECAR", time:"Data via de agenda", loc:"Online", brand:"winback", desc:"Webinar over TECAR, Hi-EMS en Hi-TENS in de praktijk, met inzichten die direct toepasbaar zijn.", trainers:"Tamara", url:"https://calendly.com/bloomeanederland/neocare-update"}
 ];
 
-const PARTNERS = {
-  bloomea:[
-    {name:"Facemanager", loc:"Aalsmeer", devices:"La Fontaine, Neolift, Dr. Platon, No Needle Meso"},
-    {name:"Touch by Angels", loc:"Almere", devices:"La Fontaine, Neocare Elite"},
-    {name:"De Beautycoach", loc:"Amsterdam", devices:"Neolift, Dr. Platon"},
-    {name:"Marz Skincare", loc:"Breda", devices:"La Fontaine, Neocare Elite, No Needle Meso"},
-    {name:"Stellezza", loc:"Tilburg", devices:"Neocare Elite, La Fontaine, Dr. Platon"},
-    {name:"Beau D'or Beauty & Health Centre", loc:"Veghel", devices:"Neocare Elite"}
-  ],
-  winback:[
-    {name:"FysioPlus Regio Oost", loc:"Ede", devices:"BACK4"},
-    {name:"Sportfysio Brabant", loc:"Tilburg", devices:"BACK3TX"},
-    {name:"Medisch Centrum De Boer", loc:"Heesch", devices:"BACK4, BACK White"}
-  ]
-};
+const PARTNERS = {bloomea:[], winback:[]}; /* TB Medsolutions toont geen praktijknamen of -logo's (10 nov 2026) */
 
 const FAQS = {
   bloomea:[
     {cat:"Financiering", q:"Verdient mijn investering zichzelf terug?", a:"We kijken tijdens een vrijblijvende kennismaking praktisch mee naar je behandeltarieven en klantvolume. Pas als de terugverdientijd realistisch is, adviseren we verder."},
     {cat:"Financiering", q:"Kan ik gespreid betalen, ook zonder aanbetaling?", a:"Ja. We bieden lease en gespreid betalen aan, met of zonder aanbetaling en met of zonder BTW meefinancieren."},
-    {cat:"Training & ondersteuning", q:"Hoeveel training krijg ik bij aanschaf?", a:"Een dag praktijktraining in jouw salon bij levering, daarna 12 maanden bijscholing op maat van jouw niveau, op locatie of online, inclusief certificaat."},
+    {cat:"Training & ondersteuning", q:"Hoeveel training krijg ik bij aanschaf?", a:"Een dag praktijktraining bij levering, daarna onbeperkt bijscholing: trainingsmomenten per apparaat bij partners op locatie (we streven naar elk kwartaal, afhankelijk van aanmeldingen), de Bloomea Academy met trainingsvideo's en doorlopende updates via de groepsapp. Bij nieuwe toepassingen, zoals Skin+, ben je als eerste uitgenodigd."},
     {cat:"Algemeen", q:"Wat als mijn klanten de behandeling niet kopen?", a:"Wij helpen met positionering, campagnes en consultstrategieën, zodat jij weet hoe je trajecten verkoopt."},
     {cat:"Algemeen", q:"Er zijn al veel salons in mijn regio, maakt dat uit?", a:"Positionering is leidend, niet locatie. Salons die winnen zijn premium gepositioneerd en leveren zichtbaar resultaat."}
   ],
   winback:[
     {cat:"Financiering", q:"Wat kost een Winback-apparaat?", a:"Winback-apparatuur valt onder het pilotprogramma met een introductietarief per regio. We bespreken de exacte investering persoonlijk."},
-    {cat:"Training & ondersteuning", q:"Wat als ik er na de training nog niet zeker van ben?", a:"Je trainer is direct bereikbaar via WhatsApp. Je krijgt een collega met praktijkervaring, geen helpdesk."},
+    {cat:"Training & ondersteuning", q:"Wat als ik er na de training nog niet zeker van ben?", a:"Als klant bereik je ons 24/7, ook via WhatsApp. Je krijgt een collega met praktijkervaring, geen helpdesk."},
     {cat:"Algemeen", q:"Vervangt Winback mijn handen als therapeut?", a:"Nee. Winback vervangt je behandeling niet, het versterkt 'm. Je klinische blik en manuele technieken blijven het hoofdinstrument."},
     {cat:"Algemeen", q:"Ik werk al met andere apparatuur, is dit dubbelop?", a:"Winback is gebouwd om náást bestaande technieken te werken, niet in plaats ervan."},
-    {cat:"Algemeen", q:"Is er klinische onderbouwing voor Winback?", a:"Ja, gebaseerd op TECAR-technologie en poly-tissulaire biostimulatie, met onderbouwing via o.a. CNRS, en gebruik bij Johns Hopkins Hospital en 300+ ziekenhuizen en klinieken in 55 landen."}
+    {cat:"Algemeen", q:"Is er klinische onderbouwing voor Winback?", a:"Ja, gebaseerd op TECAR-technologie en poly-tissulaire biostimulatie, met onderbouwing via o.a. CNRS, een retrospectieve studie onder 89 patiënten (pijnscore bij bewegen van 7,0 naar 1,2) en gebruik in 300 ziekenhuizen en klinieken in 55 landen. Alles staat in de Winback White Paper, die je op deze site downloadt."}
   ]
 };
 /* === SERIES: Neocare en BACK varianten gebundeld op één pagina === */
@@ -1533,11 +1545,12 @@ const PRODUCT_MEDIA = {
   "no-needle-meso":  {device:"https://cms.tbmedsolutions.nl/assets/hero/no-needle-meso-2.png", gallery:[]},
   "back4":           {device:IMG.back4Photo, gallery:[IMG.back4G1, IMG.back4G2]},
   "back3tx":         {device:IMG.back3txPhoto, gallery:[IMG.back3G1, IMG.back3G2]},
-  "back-white":      {device:null, gallery:[]}
+  "back-white":      {device:IMG.back4Photo, caption:"Op de foto: BACK4. BACK White is hetzelfde apparaat in een witte behuizing.", gallery:[]},
+  "skin-plus":       {device:BF+"2025/01/capture-decran-2025-03-19-a-184022.png", caption:"Skin+ draait op de Neocare Elite.", gallery:[]}
 };
 function productHeroMedia(p){
   const M = PRODUCT_MEDIA[p.id]||{};
-  if(M.device) return `<div class="product-hero-media"><img src="${M.device}" alt="${p.name} apparaat"></div>`;
+  if(M.device) return `<div class="product-hero-media"><img src="${M.device}" alt="${p.name} apparaat">${M.caption?`<p class="media-caption">${M.caption}</p>`:""}</div>`;
   const sb = SUBBRAND[p.id];
   return `<div class="product-hero-media is-placeholder ${sb==='Winback Women'?'ph-women':''}">${sb&&SUBBRAND_LOGO[sb]?`<img class="ph-logo" src="${SUBBRAND_LOGO[sb]}" alt="${sb}">`:""}<span class="ph-name">${p.name}</span><span class="ph-note">Productfoto volgt</span></div>`;
 }
@@ -1574,23 +1587,24 @@ const HOW = {
   "dr-platon":"Dr. Platon werkt met niet-thermische cold plasma: een 'plasmadouche' die de huid behandelt zonder warmteontwikkeling, pijn of hersteltijd, veilig inzetbaar bij een breed scala aan huidproblemen.",
   "no-needle-meso":"Via ETM-technologie worden actieve ingrediënten zonder naald diep in de huid gebracht, voor optimale hydratatie, voeding en huidverjonging, volledig pijnloos en zonder hersteltijd.",
   "back4":"BACK4 stuurt TECAR, HiEMS en HiTENS via twee onafhankelijke kanalen en behandelt tot drie lichaamszones tegelijk, tot 6 cm diep. Combineerbaar met manuele therapie, dry needling en IASTM.",
-  "back3tx":"BACK3TX combineert TECAR, HiEMS en HiTENS in één behandelkanaal. De gepatenteerde Power-In technologie past de energie automatisch aan op de weerstand van het weefsel. Een effectieve sessie duurt 15 minuten.",
-  "back-white":"BACK White past de medische Winback-technologie toe op esthetische en women's health-toepassingen: pijnmodulatie, circulatie, oedeembehandeling, spieractivatie en weefselherstel, manueel én handsfree."
+  "back3tx":"BACK3TX combineert TECAR, HiEMS en HiTENS in één behandelkanaal. De gepatenteerde Power-In technologie past de energie automatisch aan op de weerstand van het weefsel. Een behandeling duurt circa 30 minuten.",
+  "back-white":"BACK White werkt precies als de BACK4: TECAR, HiEMS en HiTENS via twee onafhankelijke kanalen, tot 6 cm diep. De witte uitvoering is bedoeld voor de esthetisch-medische praktijk, met de Winback Women-protocollen voor body firming, postpartum herstel en esthetiek.",
+  "skin-plus":"Radiofrequentie en Hi-EMS, gecombineerd in één gezichtsprotocol op de Neocare Elite. Eén: de weefselkwaliteit en celregeneratie verbeteren. Twee: gericht de spieren stimuleren om spierspanning en de ondersteunende functie te versterken. Drie: weefsels ontlasten en de circulatie verbeteren. Ontlasten, verstevigen, regenereren."
 };
 
 /* Het complete aanbod, apparaat + volledig service-traject */
 const AANBOD = {
   bloomea:[
     {h:"Marketing wordt voor je gedaan", p:"Social campagnes, contentmateriaal, het Marketing Boost Programma en een Open Deur Dag waarbij wij de consulten uit handen nemen."},
-    {h:"Praktijktraining bij levering", p:"Een dag praktijktraining in jouw salon bij levering, daarna 12 maanden bijscholing, op locatie of online, inclusief certificaat."},
-    {h:"Je trainer is direct bereikbaar via WhatsApp", p:"Een vraag tijdens een behandeling? Je appt een collega uit het vak. Geen anonieme helpdesk."},
+    {h:"Praktijktraining bij levering", p:"Een dag praktijktraining bij levering, daarna onbeperkt bijscholing: trainingsmomenten per apparaat, de Bloomea Academy met trainingsvideo's en updates via de groepsapp."},
+    {h:"Als klant bereik je ons 24/7", p:"Een vraag tijdens een behandeling? Je appt een collega uit het vak, ook buiten kantooruren. Geen anonieme helpdesk."},
     {h:"Academy met 100+ masterclasses", p:"Over huid, fascia, voeding, hormonen, bedrijfsstrategie en marketing. Plus webinars en demodagen."},
     {h:"Flexibele financiering", p:"Lease of gespreid betalen, met of zonder aanbetaling, met of zonder BTW meefinancieren."}
   ],
   winback:[
     {h:"Winback Academy", p:"Toegang tot bewezen protocollen per indicatie, ontwikkeld met internationale medische staf, met doorgroeimogelijkheid tot erkend trainer."},
     {h:"Persoonlijke implementatie", p:"Begeleiding bij het integreren van TECAR in je bestaande behandelplan."},
-    {h:"Je trainer is direct bereikbaar via WhatsApp", p:"Een vraag tijdens een behandeling? Je appt een collega met praktijkervaring. Geen anonieme helpdesk."},
+    {h:"Als klant bereik je ons 24/7", p:"Een vraag tijdens een behandeling? Je appt een collega met praktijkervaring, ook buiten kantooruren. Geen anonieme helpdesk."},
     {h:"Regio-exclusiviteit & webinars", p:"Als pilotcentre ben je de eerste in je regio. Wij verzorgen kennismakingswebinars die de technologie introduceren."},
     {h:"Flexibele financiering", p:"Pilotprogramma met introductietarief, lease of gespreid betalen, persoonlijk doorgerekend."}
   ]
@@ -1614,11 +1628,9 @@ const CAREPLUS = {
 
 /* Echte brochure-bestanden: alleen voor de apparaten waarvan Winback een officiële PDF aanleverde.
    Bestanden moeten naast index.html op Netlify staan onder /brochures/ (zie leveringsinstructies). */
-const REAL_DOWNLOADS = {
-  "back4": {path:"/brochures/winback-brochure.pdf", label:"Winback brochure (PDF, EN)"},
-  "back3tx": {path:"/brochures/winback-brochure.pdf", label:"Winback brochure (PDF, EN)"},
-  "back-white": {path:"/brochures/winback-brochure.pdf", label:"Winback brochure (PDF, EN)"}
-};
+const WHITEPAPER = {path:"/brochures/winback-whitepaper-2026.pdf", label:"Winback White Paper (PDF, EN)"};
+const BROCHURE_WB = {path:"/brochures/winback-brochure.pdf", label:"Winback-brochure (PDF, EN)"};
+const REAL_DOWNLOADS = { "back4":WHITEPAPER, "back3tx":WHITEPAPER, "back-white":WHITEPAPER };
 
 /* === NAV CONFIG per brand (winback-stijl dropdown) === */
 function navConfig(brand){
@@ -1792,7 +1804,7 @@ function productCard(p, brand){
       <div class="card-zone">${p.zone.join(" · ")}${SUBBRAND[p.id]?` · ${SUBBRAND[p.id]}`:""}</div>
       <h4>${p.name}</h4>
       <p>${p.tagline}</p>
-      <div class="card-foot"><span class="price-from mono">${p.price?("vanaf <b>€"+p.price+"</b>/mnd"):"Op aanvraag"}</span><span class="link-arrow">Bekijk${icon("arrow")}</span></div>
+      <div class="card-foot"><span class="price-from mono">${p.addon?("Uitbreiding op "+prod(p.addon).name):p.price?("vanaf <b>€"+p.price+"</b>/mnd"):"Op aanvraag"}</span><span class="link-arrow">Bekijk${icon("arrow")}</span></div>
     </div>
   </a>`;
 }
@@ -1926,7 +1938,11 @@ function renderGate(){
   <!-- STAP 4: bewijs direct onder de keuze -->
   <section class="tight">
     <div class="wrap">
-      ${partnerStrip(null,{label:"Praktijken die al met onze apparatuur werken"})}
+      <div class="fact-strip">
+        <div><b>${SITE_CONFIG.googleReviewScore} op Google</b><span>${SITE_CONFIG.googleReviewCount} reviews · <a href="${SITE_CONFIG.googleMapsUrl}" target="_blank" rel="noopener">bekijk</a></span></div>
+        <div><b>3e Bloomea-distributeur</b><span>van 56 landen (2025)</span></div>
+        <div><b>Winback in 55 landen</b><span>15.000 apparaten, 300 ziekenhuizen en klinieken</span></div>
+      </div>
     </div>
   </section>
 
@@ -1936,9 +1952,9 @@ function renderGate(){
       <p class="label">Wat je krijgt</p>
       <h2 class="h2" style="max-width:720px;">Je koopt geen apparaat. Je koopt een behandeling die klanten kopen, en een team dat je helpt tot het loopt.</h2>
       <div class="usp-row" style="margin-top:36px;">
-        <div class="usp reveal"><h4>Een dag praktijktraining bij levering</h4><p>Bij levering trainen we jou en je team in jouw salon of praktijk. Daarna 12 maanden bijscholing, op locatie of online.</p></div>
+        <div class="usp reveal"><h4>Een dag praktijktraining bij levering</h4><p>Bij levering trainen we jou en je team in jouw salon of praktijk. Daarna onbeperkt bijscholing: trainingsmomenten op locatie, de Academy met trainingsvideo's en updates via de groepsapp.</p></div>
         <div class="usp reveal"><h4>Toegang tot de Academy</h4><p>100+ masterclasses over huid, fascia, voeding, hormonen, bedrijfsstrategie en marketing.</p></div>
-        <div class="usp reveal"><h4>Je trainer is direct bereikbaar via WhatsApp</h4><p>Een vraag tijdens een behandeling? Je appt een collega uit het vak, geen anonieme helpdesk.</p></div>
+        <div class="usp reveal"><h4>Als klant bereik je ons 24/7</h4><p>Een vraag tijdens een behandeling? Je appt een collega uit het vak, ook buiten kantooruren. Geen anonieme helpdesk.</p></div>
       </div>
     </div>
   </section>
@@ -1956,7 +1972,7 @@ const BRAND_COPY = {
     sub:"Bloomea-apparatuur voor huidverbetering, anti-aging en bodyshaping. Je klant ziet verschil na de eerste sessie.",
     herkenning:["Je kent ze: klanten met cellulite, huidverslapping of pigment die na een paar behandelingen afhaken omdat ze weinig verschil zien. Niet omdat jij het verkeerd doet, maar omdat je behandeling niet diep genoeg komt.","Bloomea werkt tot 6 cm diep: niet alleen op de huid, maar ook op het bindweefsel en de spier eronder. Daardoor ziet je klant verschil na de eerste sessie.","Dat verandert je salon: je verkoopt een kuur in plaats van een losse afspraak, je tarief gaat omhoog en bestaande klanten komen voor een nieuwe behandeling terug."],
     mechanisme:{kop:"Waarom het werkt: huid, bindweefsel en spier tegelijk", tekst:"Radiofrequentie (TECAR) verwarmt het weefsel van binnenuit en zet de doorbloeding en celactiviteit aan. Elektrostimulatie activeert daarbij de spier eronder. Omdat de energie tot 6 cm diep komt, werk je niet alleen op het huidoppervlak maar ook op de laag waar verslapping, cellulite en vetophoping ontstaan."},
-    zekerheid:[["Training","Een dag praktijktraining in jouw salon bij levering, daarna 12 maanden bijscholing"],["Service","Je trainer is direct bereikbaar via WhatsApp"],["Academy","100+ masterclasses over huid, fascia, voeding, hormonen, bedrijfsstrategie en marketing"],["Financiering","Lease of gespreid betalen, met of zonder aanbetaling"]],
+    zekerheid:[["Training","Een dag praktijktraining bij levering, daarna onbeperkt bijscholing, met trainingsmomenten per apparaat en de Bloomea Academy"],["Service","Als klant bereik je ons 24/7, ook via WhatsApp"],["Academy","100+ masterclasses over huid, fascia, voeding, hormonen, bedrijfsstrategie en marketing"],["Financiering","Lease of gespreid betalen, met of zonder aanbetaling"]],
     instap:"Instappen vanaf €6.900",
     nu:"Elke maand plannen we een beperkt aantal demo's op locatie. Hoe eerder je kennismaakt, hoe eerder je apparaat er staat."
   },
@@ -1965,7 +1981,7 @@ const BRAND_COPY = {
     sub:"Winback TECAR-apparatuur voor fysiotherapeuten en medisch specialisten. BACK4 is het meest ingezette model bij fysiotherapeuten en osteopaten.",
     herkenning:["Je kent ze: de patiënt met een chronische rugklacht die elke keer terugkomt, de sporter die te lang uit de roulatie is, het postoperatieve herstel dat stagneert. Je behandelplan klopt, maar het weefsel komt niet in beweging.","Winback werkt tot 6 cm diep op huid, bindweefsel en spier. TECAR-radiofrequentie, HiEMS en HiTENS in één apparaat, naast je eigen manuele behandeling.","Dat verandert je praktijk: kortere trajecten, patiënten die eerder weer belastbaar zijn en een behandeling die verwijzers en sporters herkennen."],
     mechanisme:{kop:"Waarom het werkt: energie waar je handen niet komen", tekst:"TECAR-radiofrequentie maakt het lichaam onderdeel van het elektrische circuit en verhoogt de weefseltemperatuur tot 6 cm diep. HiEMS activeert de spier, HiTENS moduleert de pijn. Samen versnellen ze doorbloeding, afvoer van oedeem en weefselherstel, terwijl jouw manuele technieken het hoofdinstrument blijven."},
-    zekerheid:[["Certificering","FDA-geregistreerd en CE-gecertificeerd als medisch hulpmiddel"],["Training","Praktijktraining bij levering en toegang tot de Winback Academy"],["Service","Je trainer is direct bereikbaar via WhatsApp"],["Financiering","Pilotprogramma met introductietarief, lease of gespreid betalen"]],
+    zekerheid:[["Certificering","CE-gecertificeerd medisch hulpmiddel (CE 0068)"],["Training","Praktijktraining bij levering en toegang tot de Winback Academy"],["Service","Als klant bereik je ons 24/7, ook via WhatsApp"],["Financiering","Pilotprogramma met introductietarief, lease of gespreid betalen"]],
     instap:"",
     nu:"Winback start bewust met een beperkt aantal praktijken per regio. Zodra jouw regio is ingevuld, sluit de pilot daar."
   }
@@ -2026,7 +2042,7 @@ function geloofBlock(brand){
           <p class="label">Waarom het werkt</p>
           <h2 class="h2">${C.mechanisme.kop}</h2>
           <p class="body-text" style="margin-top:16px;">${C.mechanisme.tekst}</p>
-          ${brand==='winback' ? `<ul class="check-list" style="margin-top:18px;"><li>${icon("check")}<span>CE-gecertificeerd medisch hulpmiddel (CE 0068, MTIC)</span></li><li>${icon("check")}<span>Onderbouwd in samenwerking met CNRS, het Franse nationale onderzoekscentrum</span></li><li>${icon("check")}<span>In gebruik bij 300+ ziekenhuizen en klinieken in 55 landen, sinds 2013</span></li></ul>` : `<ul class="check-list" style="margin-top:18px;"><li>${icon("check")}<span>Gebruikt door meer dan 9.000 instituten wereldwijd</span></li><li>${icon("check")}<span>Gepatenteerde combinatie van TECAR, Hi-TENS en Hi-EMS; La Fontaine ontwikkeld met Franse plastisch chirurgen</span></li><li>${icon("check")}<span>Rechtstreeks uit de fabriek in Frankrijk, zonder tussenleveranciers</span></li></ul>`}
+          ${brand==='winback' ? `<ul class="check-list" style="margin-top:18px;"><li>${icon("check")}<span>CE-gecertificeerd medisch hulpmiddel (CE 0068, MTIC)</span></li><li>${icon("check")}<span>Onderbouwd in samenwerking met CNRS, het Franse nationale onderzoekscentrum</span></li><li>${icon("check")}<span>15.000 apparaten in 55 landen, bij 300 ziekenhuizen en klinieken en de medische staf van 500 sportclubs en bonden</span></li></ul>` : `<ul class="check-list" style="margin-top:18px;"><li>${icon("check")}<span>Gebruikt door meer dan 9.000 instituten wereldwijd</span></li><li>${icon("check")}<span>Gepatenteerde combinatie van TECAR, Hi-TENS en Hi-EMS; La Fontaine ontwikkeld met Franse plastisch chirurgen</span></li><li>${icon("check")}<span>Rechtstreeks uit de fabriek in Frankrijk, zonder tussenleveranciers</span></li></ul>`}
         </div>
         <div class="wie-card">
           <img src="${IMG.tamaraLach}" alt="Tamara de Boer" loading="lazy">
@@ -2057,6 +2073,12 @@ function bewijsBlock(brand){
       <p class="label">Bewijs</p>
       <h2 class="h2" style="max-width:720px;">${brand==='bloomea' ? 'Wat salons meten, niet wat wij beloven.' : 'Wat praktijken en onderzoekers meten.'}</h2>
       ${partnerStrip(brand,{cls:"mt"})}
+      ${brand==='winback' ? `<div class="fact-strip" style="margin-top:30px;">
+        <div><b>7,0 → 1,2</b><span>Pijnscore bij bewegen (VAS)</span></div>
+        <div><b>70,8% → 5,6%</b><span>Patiënten die medicatie gebruiken</span></div>
+        <div><b>80° → 115°</b><span>Kniebuiging na behandeling</span></div>
+      </div>
+      <p style="font-size:.78rem;color:var(--ink-faint);margin-top:10px;">Retrospectieve studie met de BACK4, 89 patiënten, 2022-2025, gemiddeld acht sessies van 25 minuten. Observationeel, zonder controlegroep. Bron: Winback White Paper 2026.</p>` : ""}
       ${res.length ? `<div class="result-gallery" style="margin-top:36px;">${res.map(r=>`<div class="result-item reveal"><img src="${r.img}" alt="${r.label}" loading="lazy"><span class="rbadge">Voor/na</span><div class="rlabel">${r.label}${r.salon?` · ${r.salon}`:""}</div></div>`).join("")}</div>` : ""}
       ${testi.length ? `<div class="testi-row" style="margin-top:36px;">${testi.map(testiCard).join("")}</div>` : ""}
       ${SITE_CONFIG.googleReviewScore ? `<p class="body-text google-line" style="margin-top:18px;"><span class="gstars" aria-hidden="true">★★★★★</span> <b>${SITE_CONFIG.googleReviewScore}</b> op Google${SITE_CONFIG.googleReviewCount?`, ${SITE_CONFIG.googleReviewCount} reviews`:""} · <a href="${SITE_CONFIG.googleMapsUrl}" target="_blank" rel="noopener">Bekijk op Google</a></p>` : ""}
@@ -2066,8 +2088,8 @@ function bewijsBlock(brand){
 }
 function zekerheidBlock(brand, p){
   const C = BRAND_COPY[brand]; const rows = C.zekerheid.slice();
-  rows.push(["Garantie", (p && p.garantie) || "2 jaar op fabricagefouten, volgens onze algemene voorwaarden"]);
-  if(p && p.levertijd) rows.push(["Levertijd", p.levertijd]);
+  rows.push(["Garantie", (p && p.garantie) || "2 jaar op hardware, 1 jaar op accessoires"]);
+  const D = p && DEVICE_DATA[p.id]; if(D) rows.push(["Levertijd", D.levertijd]);
   return `<div class="zekerheid"><p class="label">Zekerheid bij aankoop</p><dl>${rows.map(r=>`<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join("")}</dl></div>`;
 }
 function voordelenBlock(brand){
@@ -2116,7 +2138,7 @@ function apparatuurBlock(brand){
             <h4>${p.name}</h4>
             <div class="ind-label">${SHOWCASE_INDS[p.id]?.label || "Inzetbaar bij"}</div>
             <div class="ind-list">${(SHOWCASE_INDS[p.id]?.items || p.indications.map(x=>indi(x)?.name).filter(Boolean)).map(x=>`<span>${x}</span>`).join("")}</div>
-            <div class="showcase-price">${p.price!=null ? `Vanaf €${p.price}/mnd · leasen mogelijk` : "Investering op aanvraag"}</div>
+            <div class="showcase-price">${prijsRegel(p)}</div>
             <span class="showcase-cta">Bekijk ${p.name} ${icon("arrow")}</span>
           </div>
         </a>`).join("")}
@@ -2124,26 +2146,23 @@ function apparatuurBlock(brand){
     </div>
   </section>`;
 }
-/* Downloadblok: lagere drempel voor wie nog oriënteert (stap 10 van de actielijst). Formulier gaat via Netlify/GHL. */
+/* Downloadblok: alleen voor Winback (White Paper + brochure). Bloomea heeft (nog) geen download. */
 function downloadBlock(brand, opts){
   opts=opts||{};
+  if(brand!=='winback') return "";
   const p = opts.product;
-  const real = p && REAL_DOWNLOADS[p.id];
-  const kop = p ? `Alles over ${p.name}, rustig na te lezen.` : "Voor/na-resultaten uit Nederlandse salons en praktijken, met het aantal sessies erbij.";
-  const sub = p ? `De brochure van ${p.name} en het resultatenboek met voor/na-resultaten en het aantal sessies. ${brand==='winback'?'Inclusief de whitepaper met klinische studies.':''}` : "Het resultatenboek en de brochure, direct in je inbox. Geen telefoontje, tenzij je daar zelf om vraagt.";
   return `
   <section id="downloads" class="${opts.compact?'tight':''}">
     <div class="wrap">
       <div class="lead-box">
         <div>
-          <p class="label light">Download het resultatenboek en de brochure</p>
-          <h3 class="h2" style="color:#fff;">${kop}</h3>
-          <p class="lede" style="color:rgba(255,255,255,.8);margin-top:12px;">${sub}</p>
+          <p class="label light">Download de Winback White Paper</p>
+          <h3 class="h2" style="color:#fff;">Het klinische bewijs, rustig na te lezen.</h3>
+          <p class="lede" style="color:rgba(255,255,255,.8);margin-top:12px;">88 pagina's (Engels): de onderzoeken met het CNRS, een retrospectieve studie onder 89 patiënten, klinische casussen en de wetenschappelijke literatuur. De brochure krijg je erbij.</p>
         </div>
-        <form class="lead-form" onsubmit="submitLead(event)" data-type="download" data-onderwerp="${p?p.name:'Resultatenboek en brochure'}" ${real ? `data-pdf="${real.path}" data-pdf-label="${real.label}"` : ""}>
+        <form class="lead-form" onsubmit="submitLead(event)" data-type="download" data-onderwerp="${p?'White Paper ('+p.name+')':'Winback White Paper'}" data-pdf="${WHITEPAPER.path}" data-pdf-label="${WHITEPAPER.label}" data-pdf2="${BROCHURE_WB.path}" data-pdf2-label="${BROCHURE_WB.label}">
           ${LEAD_FIELDS.naam}${LEAD_FIELDS.email}
-          ${brand==='winback' ? `<label class="check"><input type="checkbox" name="whitepaper" value="ja" checked> Stuur ook de whitepaper met klinische studies mee</label>` : ""}
-          <button class="btn btn-brand" style="justify-content:center;" type="submit">Download het resultatenboek en de brochure</button>
+          <button class="btn btn-brand" style="justify-content:center;" type="submit">Download de White Paper</button>
           <p class="form-privacy">Je gegevens gebruiken we alleen om je de download te sturen. <a href="/privacy">Privacy</a></p>
         </form>
       </div>
@@ -2164,7 +2183,7 @@ function renderBrandHome(brand){
             <p class="lede" data-test="hero-sub">${C.sub}</p>
             <div class="hero-cta-row" style="margin-top:30px;">
               <button class="btn btn-brand" onclick="openLead('kennismaking')">Plan een kennismaking</button>
-              <a class="btn btn-ghost-light" href="#downloads">Download het resultatenboek</a>
+              ${brand==='winback' ? `<a class="btn btn-ghost-light" href="#downloads">Download de White Paper</a>` : `<a class="btn btn-ghost-light" href="/bloomea/evenementen">Bekijk de demodagen</a>`}
             </div>
             <p class="cta-sub light">${callbackLine()}</p>
             ${belRegel('light')}
@@ -2270,8 +2289,9 @@ function renderProduct(brand, id){
       <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px;">
         ${S.members.map(mid=>{ const m=prod(mid); return `<a class="btn btn-sm ${mid===id?'btn-primary':'btn-ghost'}" href="/${brand}/producten/${mid}">${m.name}</a>`; }).join("")}
       </div>` : "";
-  const prijs = p.price!=null ? `Vanaf €${p.price}/mnd · leasen mogelijk` : "Investering op aanvraag";
-  const rv = brand==='bloomea' ? 75 : 55;
+  const prijs = prijsRegel(p);
+  const D = DEVICE_DATA[p.id];
+  const rv = D ? D.aLo : (brand==='bloomea' ? 75 : 55);
 
   return `
   <!-- 1. AANDACHT -->
@@ -2287,7 +2307,7 @@ function renderProduct(brand, id){
           <p class="prijs-regel">${prijs}${isNeocare ? ` · Instappen vanaf €18.900 · Demomodel beschikbaar` : ""}</p>
           <div class="hero-cta-row">
             <button class="btn btn-primary" onclick="openLead('demo','${p.name}')">Plan een kennismaking</button>
-            <a class="btn btn-ghost" href="#downloads">Download de brochure</a>
+            ${brand==='winback' ? `<a class="btn btn-ghost" href="#downloads">Download de White Paper</a>` : p.id==='skin-plus' ? `<a class="btn btn-ghost" href="${SKIN_URL}" target="_blank" rel="noopener">Naar de lancering</a>` : `<a class="btn btn-ghost" href="/bloomea/evenementen">Bekijk de demodagen</a>`}
           </div>
           <p class="cta-sub">${callbackLine()}</p>
           ${belRegel()}
@@ -2319,6 +2339,7 @@ function renderProduct(brand, id){
           <div class="spec-row">
             <div class="spec"><b>Werkt tot ${p.depth} cm diep</b><span>${p.depth>=4 ? 'Niet alleen op de huid, ook op fascia en spier eronder' : 'Gericht op huid en de laag direct eronder'}</span></div>
             <div class="spec"><b>${p.zone.join(" en ")}</b><span>Toepassing</span></div>
+            ${D ? `<div class="spec"><b>${D.duur}</b><span>Behandelduur</span></div><div class="spec"><b>${D.sessies} sessies</b><span>Per kuur</span></div>` : ""}
           </div>
         </div>
         ${media[0] ? `<div class="detail-media"><img src="${media[0]}" alt="${p.name} in gebruik" loading="lazy"></div>` : ""}
@@ -2336,15 +2357,38 @@ function renderProduct(brand, id){
     </div>
   </section>` : ""}
 
-  ${p.id==='back4' ? `
+  ${['back4','back-white'].includes(p.id) ? `
   <section class="tight">
     <div class="wrap">
-      <div class="section-head"><div><p class="label">Exclusief op BACK4</p>
+      <div class="section-head"><div><p class="label">${p.id==='back4'?'Exclusief op BACK4 en BACK White':'Ook op BACK White'}</p>
         <h2 class="h3">Winback Care+: handsfree protocollen</h2>
         <p class="lede" style="margin-top:10px;max-width:680px;">Kies een programma op het scherm, plaats de elektroden en het protocol start en stopt vanzelf. Jouw handen blijven vrij voor de volgende patiënt.</p></div></div>
       <div class="grid grid-2 careplus-grid" style="margin-top:28px;gap:32px;">
         <div><p class="label">Winback Women</p><div class="usp-row" style="margin-top:14px;">${CAREPLUS.women.map(c=>`<div class="usp reveal"><h4>${c.h}</h4><p>${c.p}</p></div>`).join("")}</div></div>
         <div><p class="label">Winback Physio en sport</p><div class="usp-row" style="margin-top:14px;">${CAREPLUS.sport.map(c=>`<div class="usp reveal"><h4>${c.h}</h4><p>${c.p}</p></div>`).join("")}</div></div>
+      </div>
+    </div>
+  </section>` : ""}
+
+  ${p.id==='neocare-elite' ? `
+  <section class="tight">
+    <div class="wrap">
+      <div class="loc-card" style="padding:28px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;">
+        <div style="max-width:640px;"><p class="label">Nieuw: uitbreiding op Neocare Elite</p>
+          <h2 class="h3">Skin+ by Bloomea. Lift je huid, train je gezicht.</h2>
+          <p class="body-text" style="margin-top:8px;">Een gezichtsprotocol van 15 minuten dat naast de huid ook de gezichtsspieren behandelt. Lancering op 23 en 24 november in Renswoude.</p></div>
+        <a class="btn btn-primary" href="/bloomea/producten/skin-plus">Bekijk Skin+</a>
+      </div>
+    </div>
+  </section>` : ""}
+  ${p.id==='skin-plus' ? `
+  <section class="tight">
+    <div class="wrap">
+      <div class="loc-card" style="padding:28px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;">
+        <div style="max-width:640px;"><p class="label">Lancering</p>
+          <h2 class="h3">Live workshop op 23 en 24 november in Renswoude</h2>
+          <p class="body-text" style="margin-top:8px;">Zie Skin+ in actie, leer welke gezichtsspieren je ontspant en welke je stimuleert, en wat het je salon oplevert.</p></div>
+        <a class="btn btn-primary" href="${SKIN_URL}" target="_blank" rel="noopener">Meld je aan</a>
       </div>
     </div>
   </section>` : ""}
@@ -2390,7 +2434,7 @@ function renderProduct(brand, id){
           <b>Investering</b>
           <p class="prijs">${prijs}</p>
           ${isNeocare ? `<p>Instappen vanaf €18.900. Demomodel beschikbaar.</p>` : ""}
-          <p>${p.price!=null ? "Inclusief training, Academy en begeleiding." : "De exacte investering bespreken we persoonlijk, inclusief het volledige traject."}</p>
+          <p>${p.addon ? `Skin+ is een uitbreiding voor salons die al met de ${prod(p.addon).name} werken, of die samen aanschaffen. De investering bespreken we persoonlijk.` : p.price!=null ? "Inclusief training, Academy en begeleiding." : "De exacte investering bespreken we persoonlijk, inclusief het volledige traject."}</p>
         </div>
       </div>
       <div class="hero-cta-row" style="margin-top:34px;">
@@ -2408,16 +2452,19 @@ function renderProduct(brand, id){
         <p class="label">Reken het uit</p>
         <h3 class="h3" style="margin-bottom:14px;">Wat levert ${p.name} jou op?</h3>
         <div style="display:flex;flex-wrap:wrap;gap:16px;">
-          <div style="flex:1;min-width:160px;"><label class="roi-label">Je prijs per behandeling (€)</label><input type="number" min="0" id="roi-price-${p.id}" value="${rv}" oninput="updateRoi('${p.id}', ${p.price})" class="roi-input"></div>
+          <div style="flex:1;min-width:160px;"><label class="roi-label">Je prijs per behandeling (€)${D?` · advies ${adviesTekst(D)}`:""}</label><input type="number" min="0" id="roi-price-${p.id}" value="${rv}" oninput="updateRoi('${p.id}', ${p.price})" class="roi-input"></div>
           <div style="flex:1;min-width:160px;"><label class="roi-label">Behandelingen per maand</label><input type="number" min="0" id="roi-count-${p.id}" value="10" oninput="updateRoi('${p.id}', ${p.price})" class="roi-input"></div>
         </div>
         <div id="roi-out-${p.id}" style="margin-top:20px;padding-top:20px;border-top:1px solid var(--line);"></div>
-        <p style="font-size:.76rem;color:var(--ink-faint);margin-top:10px;">Voorbeeldberekening op basis van je eigen inschatting. Geen gegarandeerd resultaat.</p>
+        ${D ? `<p class="body-text" style="margin-top:14px;font-size:.9rem;">Rekenvoorbeeld: een kuur is ${D.sessies} behandelingen van ${D.duur}. Met de adviesprijs van ${adviesTekst(D)} per behandeling is een kuur ${kuurTekst(D)} per klant.</p>` : ""}
+        <p style="font-size:.76rem;color:var(--ink-faint);margin-top:10px;">Voorbeeldberekening op basis van de adviesprijs en je eigen inschatting. Geen gegarandeerd resultaat.</p>
       </div>` : `
       <div id="roi" class="loc-card" style="padding:28px;">
         <p class="label">Reken het uit</p>
         <h3 class="h3" style="margin-bottom:10px;">Wat levert ${p.name} jou op?</h3>
-        <p class="body-text">We rekenen het tijdens de kennismaking persoonlijk voor je uit, op basis van jouw tarieven en agenda.</p>
+        ${D ? `<p class="body-text">Een kuur is ${D.sessies} behandeling${D.sessies==="1"?"":"en"} van ${D.duur}. Met de adviesprijs van ${adviesTekst(D)} per behandeling is een kuur <b>${kuurTekst(D)}</b> per ${brand==='winback'?'patiënt':'klant'}.</p>` : ""}
+        <p class="body-text">${D ? "Wat dat voor jouw " + (brand==='winback'?'praktijk':'salon') + " betekent, rekenen we tijdens de kennismaking persoonlijk uit, op basis van jouw tarieven en agenda." : "We rekenen het tijdens de kennismaking persoonlijk voor je uit, op basis van jouw tarieven en agenda."}</p>
+        ${D ? `<p style="font-size:.76rem;color:var(--ink-faint);margin-top:10px;">Indicatie op basis van de adviesprijs. Jouw tarief bepaal je zelf.</p>` : ""}
       </div>`}
     </div>
   </section>
@@ -2425,7 +2472,7 @@ function renderProduct(brand, id){
   <!-- 6 + 7. HOE START JE + WAAROM NU -->
   ${closingBlock(brand)}
 
-  <!-- Lagere drempel: brochure en resultatenboek -->
+  <!-- Lagere drempel: White Paper (Winback) -->
   ${downloadBlock(brand,{product:p})}
 
   <!-- Verdieping -->
@@ -2708,7 +2755,7 @@ function renderContact(brand){
       </div>
     </div>
   </section>
-  <section class="bg-paper tight">
+  ${partners.length ? `<section class="bg-paper tight">
     <div class="wrap">
       <div class="section-head"><div><p class="label">Aangesloten praktijken</p><h2 class="h3">Praktijken die al met ${naam} werken</h2></div></div>
       ${brand==='winback' ? `
@@ -2719,7 +2766,7 @@ function renderContact(brand){
       </div>`).join("")}</div>` : `
       <div class="partner-grid">${partners.map(p=>`<div class="partner-card reveal"><div class="pname">${p.name}</div><div class="ploc">${p.loc}</div><div class="ploc" style="margin-top:6px;">${p.devices}</div></div>`).join("")}</div>`}
     </div>
-  </section>
+  </section>` : ""}
   ${B ? closingBlock(brand) : ""}`;
 }
 
@@ -2791,10 +2838,10 @@ function renderStatic(parts){
       <div class="hero-cta-row">${type==="kennismaking"||type==="demo" ? `<a class="btn btn-primary" href="/kennismaking/agenda${document.body.dataset.brand?`?brand=${document.body.dataset.brand}`:""}">Kies een moment in de agenda</a>` : ""}<a class="btn btn-ghost" href="/">Terug naar de homepage</a></div>
       </div></section>
       <section class="bg-paper tight"><div class="wrap" style="max-width:760px;">
-        <h2 class="h3">Ondertussen alvast lezen?</h2>
-        <p class="body-text" style="margin-top:10px;">Download het resultatenboek met voor/na-resultaten uit Nederlandse salons en praktijken, met het aantal sessies erbij.</p>
-      </div></section>
-      ${downloadBlock(null, {compact:true})}`;
+        <h2 class="h3">Ondertussen alvast kijken?</h2>
+        <p class="body-text" style="margin-top:10px;">Kom langs op een demodag of doe mee met een webinar. Werk je met Winback? Download dan de White Paper met de klinische onderbouwing.</p>
+        <div class="hero-cta-row"><a class="btn btn-ghost" href="/bloomea/evenementen">Demodagen Bloomea</a><a class="btn btn-ghost" href="/winback#downloads">Winback White Paper</a></div>
+      </div></section>`;
   }
   if(p0==="over-ons"){
     return `<section class="detail-hero tight"><div class="wrap">
@@ -2824,7 +2871,7 @@ const LEGAL = {
     "Op alle offertes, overeenkomsten en leveringen van TB Medsolutions zijn algemene voorwaarden van toepassing. Je ontvangt ze bij elke offerte en ze staan hieronder.",
     "###Toepasselijkheid","Deze voorwaarden gelden voor alle aanbiedingen en overeenkomsten tussen TB Medsolutions en zakelijke klanten, tenzij schriftelijk anders is afgesproken.",
     "###Offertes en prijzen","Offertes zijn vrijblijvend en 30 dagen geldig, tenzij anders vermeld. Prijzen zijn exclusief btw en exclusief eventuele transport- en installatiekosten, tenzij anders aangegeven.",
-    "###Levering, training en service","Bij levering ontvang je een praktijktraining. Alle apparaten worden geleverd met twee jaar garantie op fabricagefouten, tenzij anders overeengekomen. De omvang van training en service staat per apparaat in de offerte.",
+    "###Levering, training en service","Bij levering ontvang je een praktijktraining. Op de hardware van alle apparaten geldt twee jaar garantie op fabricagefouten, op accessoires één jaar, tenzij anders overeengekomen. De omvang van training en service staat per apparaat in de offerte.",
     "###Betaling en financiering","Betaling gebeurt volgens de afspraken in de offerte of de financieringsovereenkomst. Bij lease of gespreid betalen gelden aanvullend de voorwaarden van de financieringspartner.",
     "###Aansprakelijkheid","TB Medsolutions is niet aansprakelijk voor schade door onjuist gebruik van apparatuur of door gebruik in strijd met de training en de handleiding.",
     "###Toepasselijk recht","Op alle overeenkomsten is Nederlands recht van toepassing. Geschillen worden voorgelegd aan de bevoegde rechter in het arrondissement van TB Medsolutions."]},
@@ -2964,7 +3011,7 @@ const LEAD_MODES = {
   kennismaking:{eyebrow:"Kennismaking", type:"kennismaking", title:(i)=>"Plan een kennismaking", intro:"Een gesprek van 30 minuten over jouw praktijk: welke behandelingen je nu doet, waar je op vastloopt en of onze apparatuur daar iets aan verandert. Geen verkooppraatje.", fields:["naam","praktijk","telefoon","email","voorkeur"], cta:"Plan een kennismaking", steps:true},
   demo:{eyebrow:"Kennismaking", type:"demo", title:(i)=>i?`Plan een kennismaking over ${i}`:"Plan een kennismaking", intro:"We bespreken eerst kort wat je zoekt. Daarna plannen we een demo bij jou in de praktijk of op een van onze locaties.", fields:["naam","praktijk","telefoon","email","locatie"], cta:"Plan een kennismaking", steps:true},
   event:{eyebrow:"Demodagen en webinars", type:"event", title:(i)=>i||"Houd mij op de hoogte", intro:"Zodra er een datum bekend is, ontvang je als eerste een uitnodiging per e-mail.", fields:["naam","email"], cta:"Houd mij op de hoogte"},
-  download:{eyebrow:"Download", type:"download", title:(i)=>i?`Download: ${i}`:"Download het resultatenboek en de brochure", intro:"Je ontvangt de bestanden per e-mail, rustig na te lezen of te delen met collega's.", fields:["naam","email"], cta:"Verstuur de download"}
+  download:{eyebrow:"Download", type:"download", title:(i)=>i?`Download: ${i}`:"Download de Winback White Paper", intro:"Je ontvangt de bestanden per e-mail, rustig na te lezen of te delen met collega's.", fields:["naam","email"], cta:"Verstuur de download"}
 };
 const LEAD_FIELDS = {
   naam:'<div class="field"><label>Naam *</label><input type="text" name="naam" required autocomplete="name" placeholder="Voor- en achternaam"></div>',
@@ -3030,6 +3077,7 @@ function submitLead(e){
       form.innerHTML = `<div style="text-align:center;padding:6px 0;">
         <p style="font-weight:600;margin-bottom:12px;">Bedankt! De download staat voor je klaar.</p>
         <a class="btn btn-brand" style="justify-content:center;width:100%;" href="${pdfPath}" download target="_blank" rel="noopener">${pdfLabel} downloaden</a>
+        ${form.dataset.pdf2?`<a class="btn btn-ghost-light" style="justify-content:center;width:100%;margin-top:10px;" href="${form.dataset.pdf2}" download target="_blank" rel="noopener">${form.dataset.pdf2Label||"Brochure"} downloaden</a>`:""}
         <p class="form-privacy" style="margin-top:12px;">Je ontvangt de bestanden ook per e-mail.</p></div>`;
       return;
     }

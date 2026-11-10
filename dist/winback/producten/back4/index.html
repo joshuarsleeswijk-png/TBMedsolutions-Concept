@@ -881,6 +881,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
   .fact-strip span{font-size:.88rem;color:var(--ink-soft);}
   @media (max-width:760px){ .fact-strip{grid-template-columns:1fr;} }
   .media-caption{font-size:.8rem;color:var(--ink-faint);margin-top:8px;text-align:center;}
+  .product-hero-media .media-caption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:8px 14px;background:rgba(255,255,255,.92);border-top:1px solid var(--line);}
   .footer-kvk{color:rgba(255,255,255,.5);font-size:.8rem;}
 
   /* scroll-animaties: kort, vroeg, en uit bij prefers-reduced-motion */
@@ -1236,7 +1237,7 @@ gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personali
   </section></main>
 
 <!-- Cookiebanner (Consent Mode v2). Tracking laadt pas na "Accepteren". -->
-<div id="cookieBanner" role="dialog" aria-label="Cookies" class="show">
+<div id="cookieBanner" role="dialog" aria-label="Cookies">
   <p>We gebruiken cookies om te meten hoe de site wordt gebruikt en om advertenties beter af te stemmen. Alleen met jouw toestemming. <a href="/privacy">Meer over privacy</a></p>
   <div class="cookie-actions"><button class="btn btn-ghost btn-sm" onclick="consentChoice(false)">Alleen noodzakelijk</button><button class="btn btn-primary btn-sm" onclick="consentChoice(true)">Accepteren</button></div>
 </div>
